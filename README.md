@@ -12,7 +12,6 @@ committed **with their outputs**, so you can read the whole lecture on GitHub wi
 | Week | Topic | Material |
 |---|---|---|
 | **1** | Why visualization, and choosing the right chart | [`week1/`](week1/) |
-| **2** | Visual perception — preattentive attributes, Gestalt, cognitive load | [`week2/`](week2/) |
 
 More weeks will be added here as the course runs.
 
@@ -29,25 +28,19 @@ cd week1
 python3 download_data.py
 jupyter notebook week1_visualization.ipynb
 
-# Week 1 assignments
+# Assignments
 cd assignments
-python3 download_assignment_data.py
-
-# Week 2 assignments
-cd ../../week2/assignments
 python3 download_assignment_data.py
 ```
 
 **Requirements:** Python 3.9+, and:
 
 ```bash
-pip install pandas numpy matplotlib seaborn jupyter ipykernel
+pip install pandas numpy matplotlib jupyter ipykernel
 ```
 
 > No data files are committed that you cannot re-download. Each folder has a `download_*.py` script that
-> fetches its datasets from public sources, so the repository stays reproducible. Week 2 additionally
-> *generates* three perception stimulus files from a fixed seed (`SEED = 42`), so every student gets
-> identical stimuli.
+> fetches its datasets from public sources, so the repository stays reproducible.
 
 ---
 
@@ -144,46 +137,3 @@ Taken from the lecture and applied to every submitted chart:
 - Hidden in chart `08` is a second lesson worth pointing out in class: its first bar reads 0% survival for
   first-class female children, a group containing **exactly one passenger**, drawn at the same visual weight
   as a group of 43. Slice data finely enough and you chart noise as though it were a finding.
-
----
-
-## Week 2 — Visual perception
-
-**CLO1 — Identify how the human brain processes visual information.**
-
-Week 2 is assignment-only: five tasks in [`week2/assignments/TASKS.md`](week2/assignments/TASKS.md).
-
-| Task | Topic | Data |
-|---|---|---|
-| 1 | Preattentive attributes and visual search | `stimuli_search.csv` |
-| 2 | Gestalt principles of grouping | `stimuli_gestalt.csv` |
-| 3 | Cognitive load and the data-ink ratio | `car_crashes.csv`, `tips.csv` |
-| 4 | Channel effectiveness, measured | `channel_trials.csv`, `iris.csv` |
-| 5 | Capstone — redesign one chart for the human visual system | `gapminder.csv` or `diamonds.csv` |
-
-### What makes this week different
-
-Three of the five tasks ask the student to **run a small experiment on a real person** — timing a visual
-search, counting perceived groups, or estimating a ratio from a single encoded channel. Perception is a claim
-about how a brain behaves, so the brief treats it as something to measure rather than recite. Results that
-disagree with the textbook ranking score full marks when they are reported honestly and explained.
-
-### Generated stimuli
-
-Preattentive search and Gestalt grouping cannot be demonstrated on an ordinary dataset: they need displays
-where exactly one feature varies at a time. `download_assignment_data.py` therefore downloads five public
-datasets **and generates three stimulus files** with a fixed seed:
-
-| File | Rows | What it holds |
-|---|---|---|
-| `stimuli_search.csv` | 2,430 | 90 trials across colour, shape and conjunction conditions at five set sizes |
-| `stimuli_gestalt.csv` | 284 | Six panels, one per Gestalt principle, built so connection fights proximity and similarity |
-| `channel_trials.csv` | 30 | 5 channels × 6 true ratios, with blank columns for a reader's estimates |
-
-The `conjunction` condition is the centre of the week: the target is the only red circle, and every
-distractor is either a red square or a blue circle — so each one shares exactly one feature with the target.
-Search time stays flat as the display grows in the colour and shape conditions, and rises in the conjunction
-condition. Task 1 makes the student measure that slope themselves.
-
-Full briefs, the rules and the marking guide are in
-[`week2/assignments/TASKS.md`](week2/assignments/TASKS.md).
