@@ -13,6 +13,7 @@ committed **with their outputs**, so you can read the whole lecture on GitHub wi
 |---|---|---|
 | **1** | Why visualization, and choosing the right chart | [`week1/`](week1/) |
 | **2** | Visual perception — preattentive attributes, Gestalt, cognitive load | [`week2/`](week2/) |
+| **3** | Matplotlib & Seaborn — building figures, and nine charts that are wrong | [`week3/`](week3/) |
 
 More weeks will be added here as the course runs.
 
@@ -36,12 +37,16 @@ python3 download_assignment_data.py
 # Week 2 assignments
 cd ../../week2/assignments
 python3 download_assignment_data.py
+
+# Week 3 assignments — data is already committed, nothing to download
+cd ../../week3/assignments
+python3 vizlib.py          # self-check that the toolkit runs
 ```
 
 **Requirements:** Python 3.9+, and:
 
 ```bash
-pip install pandas numpy matplotlib seaborn jupyter ipykernel
+pip install pandas numpy matplotlib seaborn scipy jupyter ipykernel
 ```
 
 > No data files are committed that you cannot re-download. Each folder has a `download_*.py` script that
@@ -187,3 +192,77 @@ condition. Task 1 makes the student measure that slope themselves.
 
 Full briefs, the rules and the marking guide are in
 [`week2/assignments/TASKS.md`](week2/assignments/TASKS.md).
+
+---
+
+## Week 3 — Matplotlib & Seaborn
+
+**CLO1 — Use Python for basic static chart generation.**
+**CLO2 — Create statistical charts for data exploration.**
+
+Week 3 is assignment-only: five parts in
+[`week3/assignments/TASKS.md`](week3/assignments/TASKS.md), plus a bonus that
+rebuilds the Week 1 perception experiment in code.
+
+| Part | Topic | Marks |
+|---|---|---|
+| A | Diagnose nine charts that are wrong | 36 |
+| B | Lie Factor, computed in Python instead of measured with a ruler | 15 |
+| C | Prove a palette is colour-blind safe, with the failure shown | 9 |
+| D | **Hands-on:** the 2×2 clinical review figure, exported at 300 dpi | 25 |
+| E | One page of written justification, including the ethics clause | 15 |
+| bonus | Week 1's preattentive experiment, rebuilt and run on five people | 5 |
+
+### What makes this week different
+
+Every chart in `week3/assignments/charts/` is **arithmetically correct**.
+Nothing has been fiddled, and several are drawn more carefully than most
+published charts. They are still all wrong — and in most of them the obvious
+objection (*"correlation is not causation"*, *"the axis is truncated"*,
+*"n is too small"*) is either irrelevant or already ruled out by how the chart
+was drawn.
+
+Scepticism is cheap and generic. The marks are for naming the mechanism and
+proving it from the data, which means opening the CSV and computing something.
+Three of the nine cases hand the student a column that is **not on the chart**,
+specifically so a plausible hypothesis can be tested and rejected.
+
+Between them the nine cases cover the main ways a chart can be arithmetically
+correct and still wrong: a third variable that reverses a comparison, a
+denominator that moves, data that goes missing in a pattern, summary statistics
+that do not constrain shape, a screening matrix read as a result, an axis
+convention that manufactures an event, and parameters that quietly decide what
+a distribution looks like.
+
+Which case is which is not stated anywhere a student can read. Finding that
+out is the assignment.
+
+### The toolkit — [`week3/assignments/vizlib.py`](week3/assignments/vizlib.py)
+
+Short enough to read in one sitting, and students are expected to:
+
+| Function | What it does |
+|---|---|
+| `lie_factor(...)` | Tufte's Lie Factor, with the `ink_dimension` argument that is the whole of two cases |
+| `simulate_cvd(...)` | Machado (2009) matrices in linear RGB — takes hex codes **or** a rendered figure |
+| `delta_e` / `worst_pair` | Perceptual distance in OKLab, so "is this palette safe" is a number |
+| `match_stats(...)` | Forces a dataset to exact mean, SD and r while keeping its shape |
+
+`python3 vizlib.py` self-tests. Its worked Lie Factor examples are deliberately
+**not** the ones in the Part B audit.
+
+### The palette
+
+A three-slot Okabe–Ito subset: `#0072B2` · `#D55E00` · `#009E73`. It passes
+every check on a light surface with **all pairs** compared — worst ΔE 11.0
+under deuteranopia, 18.7 under normal vision, all three above 3:1 contrast.
+
+A fourth hue (`#CC79A7`) is provided for the cases that need one. It drops the
+CVD margin to ΔE 7.5, so any chart using it must carry direct labels or a table
+view. Part C makes students find that themselves rather than take it on trust.
+
+### Teacher material
+
+Model answers, the generator scripts and the reveal figures are **not** in this
+repository. `.gitignore` blocks `*TEACHER*`, `*_KEY*`, `*ANSWER*`, `solution/`,
+`make_task.py`, `reveals.py` and `teacher_key.py` from ever being committed here.

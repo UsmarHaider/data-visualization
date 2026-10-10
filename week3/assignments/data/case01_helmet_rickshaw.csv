@@ -1,0 +1,1001 @@
+rider_id,helmet_grade,road_type,trips,head_injuries,avg_speed_kph,months_experience
+R-0001,Standard,Motorway,100,1,73.2,59
+R-0002,Standard,Motorway,100,1,75.7,39
+R-0003,Standard,Motorway,100,4,70.7,29
+R-0004,Standard,Motorway,100,0,70.6,41
+R-0005,Standard,Motorway,100,0,69.9,23
+R-0006,Standard,Motorway,100,0,73.5,48
+R-0007,Standard,Motorway,100,0,70.4,57
+R-0008,Standard,Motorway,100,0,73.1,50
+R-0009,Standard,Motorway,100,1,68.4,11
+R-0010,Standard,Motorway,100,2,72.2,15
+R-0011,Standard,Motorway,100,2,69.0,60
+R-0012,Standard,Motorway,100,1,68.6,24
+R-0013,Standard,Motorway,100,1,69.6,37
+R-0014,Standard,Motorway,100,0,66.5,49
+R-0015,Standard,Motorway,100,1,71.1,48
+R-0016,Standard,Motorway,100,1,70.3,30
+R-0017,Standard,Motorway,100,0,68.8,59
+R-0018,Standard,Motorway,100,0,73.2,55
+R-0019,Standard,Motorway,100,1,70.1,52
+R-0020,Standard,Motorway,100,0,74.1,42
+R-0021,Standard,City arterial,100,1,37.7,46
+R-0022,Standard,City arterial,100,1,36.4,5
+R-0023,Standard,City arterial,100,0,41.3,42
+R-0024,Standard,City arterial,100,1,37.5,9
+R-0025,Standard,City arterial,100,3,39.9,57
+R-0026,Standard,City arterial,100,0,43.4,45
+R-0027,Standard,City arterial,100,2,33.3,57
+R-0028,Standard,City arterial,100,0,39.4,16
+R-0029,Standard,City arterial,100,0,37.7,27
+R-0030,Standard,City arterial,100,0,41.8,59
+R-0031,Standard,City arterial,100,1,34.2,57
+R-0032,Standard,City arterial,100,0,41.9,28
+R-0033,Standard,City arterial,100,1,33.2,54
+R-0034,Standard,City arterial,100,0,34.1,6
+R-0035,Standard,City arterial,100,1,38.7,59
+R-0036,Standard,City arterial,100,0,44.1,17
+R-0037,Standard,City arterial,100,0,32.7,20
+R-0038,Standard,City arterial,100,2,40.1,35
+R-0039,Standard,City arterial,100,0,42.7,54
+R-0040,Standard,City arterial,100,0,35.8,48
+R-0041,Standard,City arterial,100,0,38.9,35
+R-0042,Standard,City arterial,100,0,37.4,39
+R-0043,Standard,City arterial,100,0,35.8,31
+R-0044,Standard,City arterial,100,0,38.9,48
+R-0045,Standard,City arterial,100,0,37.7,34
+R-0046,Standard,City arterial,100,1,34.1,6
+R-0047,Standard,City arterial,100,0,36.5,35
+R-0048,Standard,City arterial,100,0,37.4,60
+R-0049,Standard,City arterial,100,1,33.7,53
+R-0050,Standard,City arterial,100,0,39.6,24
+R-0051,Standard,City arterial,100,0,44.3,23
+R-0052,Standard,City arterial,100,1,36.6,40
+R-0053,Standard,City arterial,100,0,33.7,33
+R-0054,Standard,City arterial,100,0,45.7,8
+R-0055,Standard,City arterial,100,2,35.5,4
+R-0056,Standard,City arterial,100,0,39.8,6
+R-0057,Standard,City arterial,100,0,35.5,18
+R-0058,Standard,City arterial,100,0,37.0,40
+R-0059,Standard,City arterial,100,1,38.6,11
+R-0060,Standard,City arterial,100,1,38.1,24
+R-0061,Standard,City arterial,100,1,40.8,55
+R-0062,Standard,City arterial,100,0,39.0,26
+R-0063,Standard,City arterial,100,0,31.6,8
+R-0064,Standard,City arterial,100,1,40.4,8
+R-0065,Standard,City arterial,100,0,36.2,26
+R-0066,Standard,City arterial,100,0,39.6,55
+R-0067,Standard,City arterial,100,0,42.0,45
+R-0068,Standard,City arterial,100,0,41.1,49
+R-0069,Standard,City arterial,100,0,37.7,47
+R-0070,Standard,City arterial,100,0,35.8,30
+R-0071,Standard,City arterial,100,0,36.5,38
+R-0072,Standard,City arterial,100,0,36.4,44
+R-0073,Standard,City arterial,100,0,37.7,41
+R-0074,Standard,City arterial,100,0,37.0,19
+R-0075,Standard,City arterial,100,0,32.2,4
+R-0076,Standard,City arterial,100,0,38.7,11
+R-0077,Standard,City arterial,100,0,41.3,36
+R-0078,Standard,City arterial,100,0,36.1,20
+R-0079,Standard,City arterial,100,0,35.8,5
+R-0080,Standard,City arterial,100,0,40.3,17
+R-0081,Standard,City arterial,100,0,43.5,56
+R-0082,Standard,City arterial,100,3,35.5,45
+R-0083,Standard,City arterial,100,0,39.2,39
+R-0084,Standard,City arterial,100,1,39.7,27
+R-0085,Standard,City arterial,100,0,39.6,47
+R-0086,Standard,City arterial,100,0,38.5,33
+R-0087,Standard,City arterial,100,0,33.5,14
+R-0088,Standard,City arterial,100,2,41.4,9
+R-0089,Standard,City arterial,100,0,35.8,46
+R-0090,Standard,City arterial,100,1,36.6,5
+R-0091,Standard,City arterial,100,0,39.9,49
+R-0092,Standard,City arterial,100,0,38.9,48
+R-0093,Standard,City arterial,100,0,38.9,43
+R-0094,Standard,City arterial,100,0,36.7,47
+R-0095,Standard,City arterial,100,0,37.5,53
+R-0096,Standard,City arterial,100,0,39.2,23
+R-0097,Standard,City arterial,100,0,38.0,12
+R-0098,Standard,City arterial,100,0,34.0,43
+R-0099,Standard,City arterial,100,0,40.7,10
+R-0100,Standard,City arterial,100,0,35.8,48
+R-0101,Standard,City arterial,100,0,37.4,20
+R-0102,Standard,City arterial,100,0,38.9,7
+R-0103,Standard,City arterial,100,0,36.3,16
+R-0104,Standard,City arterial,100,0,35.5,44
+R-0105,Standard,City arterial,100,0,41.9,27
+R-0106,Standard,City arterial,100,1,34.5,54
+R-0107,Standard,City arterial,100,0,38.0,51
+R-0108,Standard,City arterial,100,0,43.4,25
+R-0109,Standard,City arterial,100,1,33.4,4
+R-0110,Standard,City arterial,100,0,39.6,29
+R-0111,Standard,City arterial,100,0,33.6,51
+R-0112,Standard,City arterial,100,1,41.0,11
+R-0113,Standard,City arterial,100,0,39.4,19
+R-0114,Standard,City arterial,100,2,40.8,34
+R-0115,Standard,City arterial,100,0,38.5,20
+R-0116,Standard,City arterial,100,0,36.8,53
+R-0117,Standard,City arterial,100,0,37.6,57
+R-0118,Standard,City arterial,100,0,35.2,7
+R-0119,Standard,City arterial,100,0,40.4,28
+R-0120,Standard,City arterial,100,2,34.7,6
+R-0121,Standard,City arterial,100,0,39.1,56
+R-0122,Standard,City arterial,100,0,40.9,10
+R-0123,Standard,City arterial,100,0,36.5,52
+R-0124,Standard,City arterial,100,0,36.6,44
+R-0125,Standard,City arterial,100,0,37.6,21
+R-0126,Standard,City arterial,100,0,31.0,18
+R-0127,Standard,City arterial,100,0,38.6,44
+R-0128,Standard,City arterial,100,0,35.9,28
+R-0129,Standard,City arterial,100,0,33.6,30
+R-0130,Standard,City arterial,100,0,35.2,59
+R-0131,Standard,City arterial,100,0,40.5,15
+R-0132,Standard,City arterial,100,0,37.9,24
+R-0133,Standard,City arterial,100,1,41.3,46
+R-0134,Standard,City arterial,100,0,32.3,7
+R-0135,Standard,City arterial,100,0,38.4,47
+R-0136,Standard,City arterial,100,0,36.7,46
+R-0137,Standard,City arterial,100,0,38.9,41
+R-0138,Standard,City arterial,100,1,35.4,6
+R-0139,Standard,City arterial,100,0,33.6,34
+R-0140,Standard,City arterial,100,1,37.4,54
+R-0141,Standard,City arterial,100,0,36.9,56
+R-0142,Standard,City arterial,100,0,43.2,46
+R-0143,Standard,City arterial,100,1,36.8,21
+R-0144,Standard,City arterial,100,0,40.8,36
+R-0145,Standard,City arterial,100,0,40.1,17
+R-0146,Standard,City arterial,100,1,36.8,50
+R-0147,Standard,City arterial,100,0,40.2,48
+R-0148,Standard,City arterial,100,0,40.4,10
+R-0149,Standard,City arterial,100,1,36.1,6
+R-0150,Standard,City arterial,100,0,41.8,42
+R-0151,Standard,City arterial,100,0,39.1,34
+R-0152,Standard,City arterial,100,0,42.6,20
+R-0153,Standard,City arterial,100,0,34.3,22
+R-0154,Standard,City arterial,100,0,38.0,43
+R-0155,Standard,City arterial,100,0,34.4,44
+R-0156,Standard,City arterial,100,0,39.0,59
+R-0157,Standard,City arterial,100,0,34.5,18
+R-0158,Standard,City arterial,100,0,36.7,13
+R-0159,Standard,City arterial,100,1,32.3,35
+R-0160,Standard,City arterial,100,1,38.8,22
+R-0161,Standard,City arterial,100,0,39.9,35
+R-0162,Standard,City arterial,100,0,38.1,26
+R-0163,Standard,City arterial,100,0,39.4,31
+R-0164,Standard,City arterial,100,0,41.5,26
+R-0165,Standard,City arterial,100,0,38.4,38
+R-0166,Standard,City arterial,100,1,39.6,55
+R-0167,Standard,City arterial,100,0,34.8,57
+R-0168,Standard,City arterial,100,1,42.6,49
+R-0169,Standard,City arterial,100,0,39.0,37
+R-0170,Standard,City arterial,100,1,39.0,26
+R-0171,Standard,City arterial,100,0,36.6,7
+R-0172,Standard,City arterial,100,0,36.0,49
+R-0173,Standard,City arterial,100,0,38.8,48
+R-0174,Standard,City arterial,100,0,42.0,30
+R-0175,Standard,City arterial,100,1,36.5,9
+R-0176,Standard,City arterial,100,0,37.3,24
+R-0177,Standard,City arterial,100,0,36.9,40
+R-0178,Standard,City arterial,100,0,34.6,4
+R-0179,Standard,City arterial,100,0,39.2,23
+R-0180,Standard,City arterial,100,0,34.2,53
+R-0181,Standard,City arterial,100,0,39.0,18
+R-0182,Standard,City arterial,100,0,38.6,5
+R-0183,Standard,City arterial,100,0,32.6,4
+R-0184,Standard,City arterial,100,1,39.4,16
+R-0185,Standard,City arterial,100,0,37.9,23
+R-0186,Standard,City arterial,100,0,36.1,25
+R-0187,Standard,City arterial,100,0,35.9,34
+R-0188,Standard,City arterial,100,1,46.7,54
+R-0189,Standard,City arterial,100,0,35.7,21
+R-0190,Standard,City arterial,100,1,37.9,36
+R-0191,Standard,City arterial,100,0,37.9,22
+R-0192,Standard,City arterial,100,1,38.4,22
+R-0193,Standard,City arterial,100,0,35.7,47
+R-0194,Standard,City arterial,100,0,45.9,35
+R-0195,Standard,City arterial,100,0,41.8,47
+R-0196,Standard,City arterial,100,0,37.6,24
+R-0197,Standard,City arterial,100,0,35.4,4
+R-0198,Standard,City arterial,100,0,37.5,16
+R-0199,Standard,City arterial,100,1,43.8,19
+R-0200,Standard,City arterial,100,0,40.7,57
+R-0201,Standard,City arterial,100,1,38.6,45
+R-0202,Standard,City arterial,100,1,39.0,11
+R-0203,Standard,City arterial,100,0,41.9,52
+R-0204,Standard,City arterial,100,0,36.9,27
+R-0205,Standard,City arterial,100,1,41.8,42
+R-0206,Standard,City arterial,100,0,37.8,33
+R-0207,Standard,City arterial,100,1,35.6,15
+R-0208,Standard,City arterial,100,0,36.1,42
+R-0209,Standard,City arterial,100,0,29.6,16
+R-0210,Standard,City arterial,100,0,39.7,42
+R-0211,Standard,City arterial,100,0,37.4,25
+R-0212,Standard,City arterial,100,0,39.3,51
+R-0213,Standard,City arterial,100,0,39.1,36
+R-0214,Standard,City arterial,100,0,37.3,18
+R-0215,Standard,City arterial,100,0,39.6,58
+R-0216,Standard,City arterial,100,0,43.5,10
+R-0217,Standard,City arterial,100,0,42.3,41
+R-0218,Standard,City arterial,100,1,31.4,21
+R-0219,Standard,City arterial,100,0,39.7,57
+R-0220,Standard,City arterial,100,2,40.9,25
+R-0221,Standard,Inner-city lanes,100,0,16.9,23
+R-0222,Standard,Inner-city lanes,100,0,25.3,44
+R-0223,Standard,Inner-city lanes,100,0,25.3,44
+R-0224,Standard,Inner-city lanes,100,0,22.5,38
+R-0225,Standard,Inner-city lanes,100,0,28.7,26
+R-0226,Standard,Inner-city lanes,100,0,25.1,41
+R-0227,Standard,Inner-city lanes,100,0,25.1,26
+R-0228,Standard,Inner-city lanes,100,0,21.7,28
+R-0229,Standard,Inner-city lanes,100,0,23.4,29
+R-0230,Standard,Inner-city lanes,100,1,21.6,37
+R-0231,Standard,Inner-city lanes,100,0,23.3,54
+R-0232,Standard,Inner-city lanes,100,0,26.3,31
+R-0233,Standard,Inner-city lanes,100,0,22.4,39
+R-0234,Standard,Inner-city lanes,100,1,28.4,50
+R-0235,Standard,Inner-city lanes,100,2,27.8,35
+R-0236,Standard,Inner-city lanes,100,0,25.8,43
+R-0237,Standard,Inner-city lanes,100,0,22.7,33
+R-0238,Standard,Inner-city lanes,100,0,23.2,41
+R-0239,Standard,Inner-city lanes,100,0,24.3,38
+R-0240,Standard,Inner-city lanes,100,0,19.6,17
+R-0241,Standard,Inner-city lanes,100,0,19.8,32
+R-0242,Standard,Inner-city lanes,100,0,24.5,9
+R-0243,Standard,Inner-city lanes,100,0,20.2,30
+R-0244,Standard,Inner-city lanes,100,0,24.4,56
+R-0245,Standard,Inner-city lanes,100,0,19.0,18
+R-0246,Standard,Inner-city lanes,100,0,26.2,9
+R-0247,Standard,Inner-city lanes,100,0,19.6,53
+R-0248,Standard,Inner-city lanes,100,0,29.5,40
+R-0249,Standard,Inner-city lanes,100,0,22.5,13
+R-0250,Standard,Inner-city lanes,100,0,23.5,44
+R-0251,Standard,Inner-city lanes,100,0,27.9,36
+R-0252,Standard,Inner-city lanes,100,1,25.5,35
+R-0253,Standard,Inner-city lanes,100,0,23.2,29
+R-0254,Standard,Inner-city lanes,100,0,19.5,48
+R-0255,Standard,Inner-city lanes,100,0,26.8,5
+R-0256,Standard,Inner-city lanes,100,0,18.9,49
+R-0257,Standard,Inner-city lanes,100,0,24.4,55
+R-0258,Standard,Inner-city lanes,100,1,27.1,48
+R-0259,Standard,Inner-city lanes,100,0,22.6,60
+R-0260,Standard,Inner-city lanes,100,0,21.8,22
+R-0261,Standard,Inner-city lanes,100,0,22.9,13
+R-0262,Standard,Inner-city lanes,100,0,23.1,25
+R-0263,Standard,Inner-city lanes,100,0,29.1,24
+R-0264,Standard,Inner-city lanes,100,0,24.8,47
+R-0265,Standard,Inner-city lanes,100,0,25.7,5
+R-0266,Standard,Inner-city lanes,100,0,18.3,46
+R-0267,Standard,Inner-city lanes,100,0,20.8,39
+R-0268,Standard,Inner-city lanes,100,0,31.2,27
+R-0269,Standard,Inner-city lanes,100,1,24.4,49
+R-0270,Standard,Inner-city lanes,100,0,23.4,31
+R-0271,Standard,Inner-city lanes,100,1,26.1,9
+R-0272,Standard,Inner-city lanes,100,0,28.9,54
+R-0273,Standard,Inner-city lanes,100,0,26.1,21
+R-0274,Standard,Inner-city lanes,100,0,26.2,25
+R-0275,Standard,Inner-city lanes,100,0,26.8,22
+R-0276,Standard,Inner-city lanes,100,0,28.1,5
+R-0277,Standard,Inner-city lanes,100,0,23.8,4
+R-0278,Standard,Inner-city lanes,100,0,26.4,15
+R-0279,Standard,Inner-city lanes,100,0,24.3,53
+R-0280,Standard,Inner-city lanes,100,0,27.2,13
+R-0281,Standard,Inner-city lanes,100,0,27.0,58
+R-0282,Standard,Inner-city lanes,100,0,22.7,15
+R-0283,Standard,Inner-city lanes,100,0,23.7,17
+R-0284,Standard,Inner-city lanes,100,0,21.1,37
+R-0285,Standard,Inner-city lanes,100,0,20.5,49
+R-0286,Standard,Inner-city lanes,100,0,27.2,5
+R-0287,Standard,Inner-city lanes,100,0,25.1,6
+R-0288,Standard,Inner-city lanes,100,0,22.2,21
+R-0289,Standard,Inner-city lanes,100,2,27.6,55
+R-0290,Standard,Inner-city lanes,100,1,24.6,9
+R-0291,Standard,Inner-city lanes,100,0,20.2,55
+R-0292,Standard,Inner-city lanes,100,0,27.5,10
+R-0293,Standard,Inner-city lanes,100,0,23.0,29
+R-0294,Standard,Inner-city lanes,100,0,24.7,5
+R-0295,Standard,Inner-city lanes,100,0,21.0,37
+R-0296,Standard,Inner-city lanes,100,0,21.5,57
+R-0297,Standard,Inner-city lanes,100,0,24.9,6
+R-0298,Standard,Inner-city lanes,100,0,21.8,38
+R-0299,Standard,Inner-city lanes,100,0,26.4,42
+R-0300,Standard,Inner-city lanes,100,0,24.5,52
+R-0301,Standard,Inner-city lanes,100,0,23.1,50
+R-0302,Standard,Inner-city lanes,100,1,23.7,20
+R-0303,Standard,Inner-city lanes,100,0,23.9,28
+R-0304,Standard,Inner-city lanes,100,0,26.4,9
+R-0305,Standard,Inner-city lanes,100,0,19.1,39
+R-0306,Standard,Inner-city lanes,100,1,28.3,11
+R-0307,Standard,Inner-city lanes,100,1,23.5,39
+R-0308,Standard,Inner-city lanes,100,0,19.9,39
+R-0309,Standard,Inner-city lanes,100,0,27.8,35
+R-0310,Standard,Inner-city lanes,100,0,27.2,58
+R-0311,Standard,Inner-city lanes,100,0,19.3,21
+R-0312,Standard,Inner-city lanes,100,0,21.7,45
+R-0313,Standard,Inner-city lanes,100,1,21.2,31
+R-0314,Standard,Inner-city lanes,100,1,27.4,12
+R-0315,Standard,Inner-city lanes,100,0,23.9,19
+R-0316,Standard,Inner-city lanes,100,0,25.5,42
+R-0317,Standard,Inner-city lanes,100,0,21.3,10
+R-0318,Standard,Inner-city lanes,100,0,21.4,31
+R-0319,Standard,Inner-city lanes,100,0,25.0,13
+R-0320,Standard,Inner-city lanes,100,0,25.7,24
+R-0321,Standard,Inner-city lanes,100,0,19.9,23
+R-0322,Standard,Inner-city lanes,100,0,22.3,28
+R-0323,Standard,Inner-city lanes,100,2,20.0,54
+R-0324,Standard,Inner-city lanes,100,0,22.4,10
+R-0325,Standard,Inner-city lanes,100,0,27.3,46
+R-0326,Standard,Inner-city lanes,100,0,27.2,44
+R-0327,Standard,Inner-city lanes,100,1,23.4,46
+R-0328,Standard,Inner-city lanes,100,0,27.2,39
+R-0329,Standard,Inner-city lanes,100,0,25.0,35
+R-0330,Standard,Inner-city lanes,100,0,28.0,44
+R-0331,Standard,Inner-city lanes,100,0,22.2,26
+R-0332,Standard,Inner-city lanes,100,0,24.0,57
+R-0333,Standard,Inner-city lanes,100,1,25.4,5
+R-0334,Standard,Inner-city lanes,100,0,24.5,13
+R-0335,Standard,Inner-city lanes,100,0,19.2,37
+R-0336,Standard,Inner-city lanes,100,0,21.4,8
+R-0337,Standard,Inner-city lanes,100,0,21.2,40
+R-0338,Standard,Inner-city lanes,100,0,20.0,20
+R-0339,Standard,Inner-city lanes,100,0,21.2,8
+R-0340,Standard,Inner-city lanes,100,0,23.5,13
+R-0341,Standard,Inner-city lanes,100,0,24.7,15
+R-0342,Standard,Inner-city lanes,100,0,29.1,57
+R-0343,Standard,Inner-city lanes,100,1,27.8,4
+R-0344,Standard,Inner-city lanes,100,0,24.9,33
+R-0345,Standard,Inner-city lanes,100,0,23.2,8
+R-0346,Standard,Inner-city lanes,100,0,21.1,40
+R-0347,Standard,Inner-city lanes,100,0,20.5,23
+R-0348,Standard,Inner-city lanes,100,0,28.0,13
+R-0349,Standard,Inner-city lanes,100,0,17.9,29
+R-0350,Standard,Inner-city lanes,100,0,26.4,55
+R-0351,Standard,Inner-city lanes,100,0,21.6,10
+R-0352,Standard,Inner-city lanes,100,0,27.0,40
+R-0353,Standard,Inner-city lanes,100,0,24.8,16
+R-0354,Standard,Inner-city lanes,100,0,19.0,53
+R-0355,Standard,Inner-city lanes,100,0,18.6,15
+R-0356,Standard,Inner-city lanes,100,0,16.1,37
+R-0357,Standard,Inner-city lanes,100,0,30.9,40
+R-0358,Standard,Inner-city lanes,100,0,22.2,27
+R-0359,Standard,Inner-city lanes,100,0,24.3,9
+R-0360,Standard,Inner-city lanes,100,0,23.0,37
+R-0361,Standard,Inner-city lanes,100,0,28.9,31
+R-0362,Standard,Inner-city lanes,100,0,20.3,9
+R-0363,Standard,Inner-city lanes,100,0,25.0,15
+R-0364,Standard,Inner-city lanes,100,1,19.7,42
+R-0365,Standard,Inner-city lanes,100,0,29.8,28
+R-0366,Standard,Inner-city lanes,100,0,21.1,7
+R-0367,Standard,Inner-city lanes,100,1,24.2,8
+R-0368,Standard,Inner-city lanes,100,1,23.5,49
+R-0369,Standard,Inner-city lanes,100,0,24.7,36
+R-0370,Standard,Inner-city lanes,100,0,25.0,25
+R-0371,Standard,Inner-city lanes,100,0,27.9,10
+R-0372,Standard,Inner-city lanes,100,0,26.7,40
+R-0373,Standard,Inner-city lanes,100,0,19.3,36
+R-0374,Standard,Inner-city lanes,100,0,27.4,5
+R-0375,Standard,Inner-city lanes,100,0,24.4,37
+R-0376,Standard,Inner-city lanes,100,0,20.8,16
+R-0377,Standard,Inner-city lanes,100,0,20.2,11
+R-0378,Standard,Inner-city lanes,100,0,28.9,10
+R-0379,Standard,Inner-city lanes,100,0,23.6,24
+R-0380,Standard,Inner-city lanes,100,0,23.4,39
+R-0381,Standard,Inner-city lanes,100,1,19.7,52
+R-0382,Standard,Inner-city lanes,100,0,23.9,47
+R-0383,Standard,Inner-city lanes,100,0,25.6,20
+R-0384,Standard,Inner-city lanes,100,0,25.4,18
+R-0385,Standard,Inner-city lanes,100,0,24.7,38
+R-0386,Standard,Inner-city lanes,100,0,22.9,15
+R-0387,Standard,Inner-city lanes,100,0,23.7,57
+R-0388,Standard,Inner-city lanes,100,0,22.0,21
+R-0389,Standard,Inner-city lanes,100,0,25.1,11
+R-0390,Standard,Inner-city lanes,100,1,30.8,47
+R-0391,Standard,Inner-city lanes,100,0,24.9,34
+R-0392,Standard,Inner-city lanes,100,0,28.4,30
+R-0393,Standard,Inner-city lanes,100,0,18.8,23
+R-0394,Standard,Inner-city lanes,100,0,20.4,58
+R-0395,Standard,Inner-city lanes,100,0,31.3,27
+R-0396,Standard,Inner-city lanes,100,0,25.2,19
+R-0397,Standard,Inner-city lanes,100,0,23.3,52
+R-0398,Standard,Inner-city lanes,100,0,16.6,37
+R-0399,Standard,Inner-city lanes,100,0,27.1,53
+R-0400,Standard,Inner-city lanes,100,0,24.6,57
+R-0401,Standard,Inner-city lanes,100,0,27.4,43
+R-0402,Standard,Inner-city lanes,100,0,19.4,11
+R-0403,Standard,Inner-city lanes,100,0,28.4,24
+R-0404,Standard,Inner-city lanes,100,0,21.7,25
+R-0405,Standard,Inner-city lanes,100,0,26.5,16
+R-0406,Standard,Inner-city lanes,100,0,20.7,8
+R-0407,Standard,Inner-city lanes,100,0,20.4,10
+R-0408,Standard,Inner-city lanes,100,0,26.4,39
+R-0409,Standard,Inner-city lanes,100,0,22.7,40
+R-0410,Standard,Inner-city lanes,100,0,21.3,36
+R-0411,Standard,Inner-city lanes,100,0,18.3,19
+R-0412,Standard,Inner-city lanes,100,0,23.2,58
+R-0413,Standard,Inner-city lanes,100,1,26.0,18
+R-0414,Standard,Inner-city lanes,100,0,20.2,32
+R-0415,Standard,Inner-city lanes,100,0,23.1,23
+R-0416,Standard,Inner-city lanes,100,0,20.6,33
+R-0417,Standard,Inner-city lanes,100,0,29.0,37
+R-0418,Standard,Inner-city lanes,100,0,23.4,30
+R-0419,Standard,Inner-city lanes,100,0,24.0,50
+R-0420,Standard,Inner-city lanes,100,0,21.9,13
+R-0421,Standard,Inner-city lanes,100,0,28.7,56
+R-0422,Standard,Inner-city lanes,100,0,25.2,15
+R-0423,Standard,Inner-city lanes,100,0,25.0,19
+R-0424,Standard,Inner-city lanes,100,0,23.8,51
+R-0425,Standard,Inner-city lanes,100,0,26.6,49
+R-0426,Standard,Inner-city lanes,100,0,22.9,40
+R-0427,Standard,Inner-city lanes,100,0,31.2,54
+R-0428,Standard,Inner-city lanes,100,1,25.3,4
+R-0429,Standard,Inner-city lanes,100,0,30.1,34
+R-0430,Standard,Inner-city lanes,100,0,24.0,38
+R-0431,Standard,Inner-city lanes,100,0,26.0,8
+R-0432,Standard,Inner-city lanes,100,0,21.3,16
+R-0433,Standard,Inner-city lanes,100,0,25.0,5
+R-0434,Standard,Inner-city lanes,100,0,23.6,7
+R-0435,Standard,Inner-city lanes,100,0,22.3,15
+R-0436,Standard,Inner-city lanes,100,0,22.2,41
+R-0437,Standard,Inner-city lanes,100,0,21.8,36
+R-0438,Standard,Inner-city lanes,100,0,22.3,41
+R-0439,Standard,Inner-city lanes,100,0,22.3,46
+R-0440,Standard,Inner-city lanes,100,1,28.5,29
+R-0441,Standard,Inner-city lanes,100,0,23.5,37
+R-0442,Standard,Inner-city lanes,100,0,19.7,8
+R-0443,Standard,Inner-city lanes,100,0,25.5,10
+R-0444,Standard,Inner-city lanes,100,0,26.0,17
+R-0445,Standard,Inner-city lanes,100,0,24.2,17
+R-0446,Standard,Inner-city lanes,100,0,27.6,11
+R-0447,Standard,Inner-city lanes,100,0,20.8,37
+R-0448,Standard,Inner-city lanes,100,0,28.3,14
+R-0449,Standard,Inner-city lanes,100,1,22.3,26
+R-0450,Standard,Inner-city lanes,100,0,23.0,16
+R-0451,Standard,Inner-city lanes,100,0,27.0,8
+R-0452,Standard,Inner-city lanes,100,0,18.6,29
+R-0453,Standard,Inner-city lanes,100,0,23.6,26
+R-0454,Standard,Inner-city lanes,100,1,23.5,53
+R-0455,Standard,Inner-city lanes,100,0,19.6,46
+R-0456,Standard,Inner-city lanes,100,0,26.6,12
+R-0457,Standard,Inner-city lanes,100,0,22.9,30
+R-0458,Standard,Inner-city lanes,100,1,22.2,40
+R-0459,Standard,Inner-city lanes,100,0,26.2,37
+R-0460,Standard,Inner-city lanes,100,0,25.2,39
+R-0461,Standard,Inner-city lanes,100,0,21.2,49
+R-0462,Standard,Inner-city lanes,100,0,22.6,12
+R-0463,Standard,Inner-city lanes,100,0,24.4,6
+R-0464,Standard,Inner-city lanes,100,0,24.7,60
+R-0465,Standard,Inner-city lanes,100,0,23.2,35
+R-0466,Standard,Inner-city lanes,100,0,24.6,49
+R-0467,Standard,Inner-city lanes,100,0,28.8,38
+R-0468,Standard,Inner-city lanes,100,0,21.6,19
+R-0469,Standard,Inner-city lanes,100,0,28.0,41
+R-0470,Standard,Inner-city lanes,100,1,24.7,48
+R-0471,Standard,Inner-city lanes,100,0,22.3,39
+R-0472,Standard,Inner-city lanes,100,0,19.3,51
+R-0473,Standard,Inner-city lanes,100,0,27.6,40
+R-0474,Standard,Inner-city lanes,100,0,21.3,48
+R-0475,Standard,Inner-city lanes,100,0,20.6,29
+R-0476,Standard,Inner-city lanes,100,0,21.8,46
+R-0477,Standard,Inner-city lanes,100,0,24.0,42
+R-0478,Standard,Inner-city lanes,100,0,26.1,35
+R-0479,Standard,Inner-city lanes,100,1,20.9,7
+R-0480,Standard,Inner-city lanes,100,1,18.4,14
+R-0481,Standard,Inner-city lanes,100,0,20.8,17
+R-0482,Standard,Inner-city lanes,100,0,19.7,55
+R-0483,Standard,Inner-city lanes,100,0,22.0,5
+R-0484,Standard,Inner-city lanes,100,0,18.0,13
+R-0485,Standard,Inner-city lanes,100,1,21.5,38
+R-0486,Standard,Inner-city lanes,100,0,20.2,54
+R-0487,Standard,Inner-city lanes,100,0,27.5,24
+R-0488,Standard,Inner-city lanes,100,0,20.5,5
+R-0489,Standard,Inner-city lanes,100,1,21.0,37
+R-0490,Standard,Inner-city lanes,100,0,27.4,33
+R-0491,Standard,Inner-city lanes,100,0,21.6,19
+R-0492,Standard,Inner-city lanes,100,1,23.9,42
+R-0493,Standard,Inner-city lanes,100,0,19.8,22
+R-0494,Standard,Inner-city lanes,100,1,22.8,24
+R-0495,Standard,Inner-city lanes,100,0,30.5,21
+R-0496,Standard,Inner-city lanes,100,0,29.5,16
+R-0497,Standard,Inner-city lanes,100,0,23.6,10
+R-0498,Standard,Inner-city lanes,100,1,26.0,39
+R-0499,Standard,Inner-city lanes,100,0,24.8,39
+R-0500,Standard,Inner-city lanes,100,0,20.0,50
+R-0501,Standard,Inner-city lanes,100,0,21.9,57
+R-0502,Standard,Inner-city lanes,100,0,22.9,10
+R-0503,Standard,Inner-city lanes,100,0,26.1,28
+R-0504,Standard,Inner-city lanes,100,1,24.8,9
+R-0505,Standard,Inner-city lanes,100,0,26.0,11
+R-0506,Standard,Inner-city lanes,100,0,23.6,57
+R-0507,Standard,Inner-city lanes,100,0,21.2,53
+R-0508,Standard,Inner-city lanes,100,0,15.7,27
+R-0509,Standard,Inner-city lanes,100,1,30.5,34
+R-0510,Standard,Inner-city lanes,100,0,25.4,30
+R-0511,Standard,Inner-city lanes,100,0,26.7,20
+R-0512,Standard,Inner-city lanes,100,0,25.5,48
+R-0513,Standard,Inner-city lanes,100,0,22.5,45
+R-0514,Standard,Inner-city lanes,100,0,24.2,36
+R-0515,Standard,Inner-city lanes,100,0,22.1,40
+R-0516,Standard,Inner-city lanes,100,0,20.6,58
+R-0517,Standard,Inner-city lanes,100,1,26.9,39
+R-0518,Standard,Inner-city lanes,100,0,25.9,7
+R-0519,Standard,Inner-city lanes,100,0,25.5,19
+R-0520,Standard,Inner-city lanes,100,0,31.8,22
+R-0521,Standard,Inner-city lanes,100,0,27.1,26
+R-0522,Standard,Inner-city lanes,100,1,29.9,39
+R-0523,Standard,Inner-city lanes,100,0,24.8,18
+R-0524,Standard,Inner-city lanes,100,0,27.1,45
+R-0525,Standard,Inner-city lanes,100,0,24.9,53
+R-0526,Standard,Inner-city lanes,100,0,25.1,21
+R-0527,Standard,Inner-city lanes,100,0,20.4,47
+R-0528,Standard,Inner-city lanes,100,0,27.4,60
+R-0529,Standard,Inner-city lanes,100,0,18.8,12
+R-0530,Standard,Inner-city lanes,100,0,23.6,53
+R-0531,Standard,Inner-city lanes,100,0,21.0,59
+R-0532,Standard,Inner-city lanes,100,0,24.1,20
+R-0533,Standard,Inner-city lanes,100,0,27.2,16
+R-0534,Standard,Inner-city lanes,100,1,19.6,41
+R-0535,Standard,Inner-city lanes,100,0,25.7,6
+R-0536,Standard,Inner-city lanes,100,0,28.4,47
+R-0537,Standard,Inner-city lanes,100,1,24.7,59
+R-0538,Standard,Inner-city lanes,100,0,24.3,12
+R-0539,Standard,Inner-city lanes,100,0,27.4,4
+R-0540,Standard,Inner-city lanes,100,0,22.1,5
+R-0541,Standard,Inner-city lanes,100,0,23.7,28
+R-0542,Standard,Inner-city lanes,100,0,24.8,18
+R-0543,Standard,Inner-city lanes,100,0,30.4,21
+R-0544,Standard,Inner-city lanes,100,0,22.1,27
+R-0545,Standard,Inner-city lanes,100,0,24.9,6
+R-0546,Standard,Inner-city lanes,100,0,25.9,60
+R-0547,Standard,Inner-city lanes,100,0,25.3,5
+R-0548,Standard,Inner-city lanes,100,1,27.0,56
+R-0549,Standard,Inner-city lanes,100,0,24.1,46
+R-0550,Standard,Inner-city lanes,100,0,20.3,55
+R-0551,Standard,Inner-city lanes,100,0,20.5,19
+R-0552,Standard,Inner-city lanes,100,0,21.2,25
+R-0553,Standard,Inner-city lanes,100,0,28.2,46
+R-0554,Standard,Inner-city lanes,100,0,25.8,47
+R-0555,Standard,Inner-city lanes,100,0,28.2,34
+R-0556,Standard,Inner-city lanes,100,1,21.2,5
+R-0557,Standard,Inner-city lanes,100,0,22.8,53
+R-0558,Standard,Inner-city lanes,100,0,23.2,10
+R-0559,Standard,Inner-city lanes,100,1,30.5,7
+R-0560,Standard,Inner-city lanes,100,0,20.1,15
+R-0561,Standard,Inner-city lanes,100,1,28.7,24
+R-0562,Standard,Inner-city lanes,100,0,26.6,34
+R-0563,Standard,Inner-city lanes,100,0,31.3,42
+R-0564,Standard,Inner-city lanes,100,0,24.3,39
+R-0565,Standard,Inner-city lanes,100,0,24.5,27
+R-0566,Standard,Inner-city lanes,100,1,19.9,32
+R-0567,Standard,Inner-city lanes,100,0,23.7,43
+R-0568,Standard,Inner-city lanes,100,1,25.0,58
+R-0569,Standard,Inner-city lanes,100,0,20.9,5
+R-0570,Standard,Inner-city lanes,100,0,28.0,60
+R-0571,Standard,Inner-city lanes,100,0,26.7,36
+R-0572,Standard,Inner-city lanes,100,0,19.3,52
+R-0573,Standard,Inner-city lanes,100,0,21.6,27
+R-0574,Standard,Inner-city lanes,100,0,24.2,27
+R-0575,Standard,Inner-city lanes,100,0,17.5,27
+R-0576,Standard,Inner-city lanes,100,0,20.7,5
+R-0577,Standard,Inner-city lanes,100,0,25.9,47
+R-0578,Standard,Inner-city lanes,100,0,19.6,40
+R-0579,Standard,Inner-city lanes,100,0,21.4,45
+R-0580,Standard,Inner-city lanes,100,0,23.4,32
+R-0581,Standard,Inner-city lanes,100,0,21.6,57
+R-0582,Standard,Inner-city lanes,100,0,26.6,49
+R-0583,Standard,Inner-city lanes,100,0,26.3,35
+R-0584,Standard,Inner-city lanes,100,0,21.2,39
+R-0585,Standard,Inner-city lanes,100,0,23.5,55
+R-0586,Standard,Inner-city lanes,100,0,19.8,15
+R-0587,Standard,Inner-city lanes,100,0,24.3,43
+R-0588,Standard,Inner-city lanes,100,0,22.6,58
+R-0589,Standard,Inner-city lanes,100,0,26.3,15
+R-0590,Standard,Inner-city lanes,100,0,26.6,40
+R-0591,Standard,Inner-city lanes,100,0,26.2,31
+R-0592,Standard,Inner-city lanes,100,1,20.2,14
+R-0593,Standard,Inner-city lanes,100,0,27.1,49
+R-0594,Standard,Inner-city lanes,100,0,21.7,11
+R-0595,Standard,Inner-city lanes,100,0,25.2,47
+R-0596,Standard,Inner-city lanes,100,0,28.4,25
+R-0597,Standard,Inner-city lanes,100,0,26.7,10
+R-0598,Standard,Inner-city lanes,100,0,23.5,59
+R-0599,Standard,Inner-city lanes,100,0,25.6,22
+R-0600,Standard,Inner-city lanes,100,0,23.6,57
+R-0601,Premium,Motorway,100,2,72.0,26
+R-0602,Premium,Motorway,100,0,70.7,60
+R-0603,Premium,Motorway,100,0,77.5,38
+R-0604,Premium,Motorway,100,0,67.3,26
+R-0605,Premium,Motorway,100,0,74.0,41
+R-0606,Premium,Motorway,100,1,73.1,27
+R-0607,Premium,Motorway,100,1,74.3,41
+R-0608,Premium,Motorway,100,1,75.8,9
+R-0609,Premium,Motorway,100,0,80.7,27
+R-0610,Premium,Motorway,100,3,69.0,43
+R-0611,Premium,Motorway,100,0,70.9,19
+R-0612,Premium,Motorway,100,1,70.4,45
+R-0613,Premium,Motorway,100,0,76.4,47
+R-0614,Premium,Motorway,100,1,69.9,26
+R-0615,Premium,Motorway,100,0,74.2,27
+R-0616,Premium,Motorway,100,1,73.6,53
+R-0617,Premium,Motorway,100,0,75.1,37
+R-0618,Premium,Motorway,100,0,72.7,52
+R-0619,Premium,Motorway,100,0,72.6,47
+R-0620,Premium,Motorway,100,2,71.5,15
+R-0621,Premium,Motorway,100,0,72.0,57
+R-0622,Premium,Motorway,100,0,71.5,20
+R-0623,Premium,Motorway,100,1,70.7,56
+R-0624,Premium,Motorway,100,0,77.1,53
+R-0625,Premium,Motorway,100,0,74.8,44
+R-0626,Premium,Motorway,100,0,70.2,27
+R-0627,Premium,Motorway,100,0,71.2,14
+R-0628,Premium,Motorway,100,0,72.7,44
+R-0629,Premium,Motorway,100,0,71.4,12
+R-0630,Premium,Motorway,100,0,74.9,33
+R-0631,Premium,Motorway,100,0,69.0,12
+R-0632,Premium,Motorway,100,1,70.7,21
+R-0633,Premium,Motorway,100,0,72.5,43
+R-0634,Premium,Motorway,100,1,68.5,19
+R-0635,Premium,Motorway,100,0,74.1,40
+R-0636,Premium,Motorway,100,0,72.1,37
+R-0637,Premium,Motorway,100,1,70.2,10
+R-0638,Premium,Motorway,100,0,72.4,29
+R-0639,Premium,Motorway,100,1,74.5,55
+R-0640,Premium,Motorway,100,0,71.6,35
+R-0641,Premium,Motorway,100,0,76.3,31
+R-0642,Premium,Motorway,100,2,72.9,53
+R-0643,Premium,Motorway,100,0,72.9,49
+R-0644,Premium,Motorway,100,1,68.9,48
+R-0645,Premium,Motorway,100,0,72.8,41
+R-0646,Premium,Motorway,100,3,75.1,24
+R-0647,Premium,Motorway,100,1,62.6,26
+R-0648,Premium,Motorway,100,0,71.3,44
+R-0649,Premium,Motorway,100,0,75.9,49
+R-0650,Premium,Motorway,100,0,74.1,42
+R-0651,Premium,Motorway,100,0,76.3,60
+R-0652,Premium,Motorway,100,2,76.0,37
+R-0653,Premium,Motorway,100,0,67.9,59
+R-0654,Premium,Motorway,100,0,74.5,28
+R-0655,Premium,Motorway,100,0,70.4,8
+R-0656,Premium,Motorway,100,1,73.8,21
+R-0657,Premium,Motorway,100,0,70.6,17
+R-0658,Premium,Motorway,100,0,71.6,15
+R-0659,Premium,Motorway,100,1,72.7,40
+R-0660,Premium,Motorway,100,1,70.7,15
+R-0661,Premium,Motorway,100,0,66.2,21
+R-0662,Premium,Motorway,100,1,71.2,5
+R-0663,Premium,Motorway,100,2,70.6,43
+R-0664,Premium,Motorway,100,1,73.6,58
+R-0665,Premium,Motorway,100,0,71.7,18
+R-0666,Premium,Motorway,100,0,72.2,35
+R-0667,Premium,Motorway,100,1,68.7,39
+R-0668,Premium,Motorway,100,0,74.7,27
+R-0669,Premium,Motorway,100,1,70.6,37
+R-0670,Premium,Motorway,100,0,72.5,38
+R-0671,Premium,Motorway,100,1,72.6,17
+R-0672,Premium,Motorway,100,0,74.2,60
+R-0673,Premium,Motorway,100,0,71.8,23
+R-0674,Premium,Motorway,100,1,70.9,23
+R-0675,Premium,Motorway,100,0,71.4,10
+R-0676,Premium,Motorway,100,0,69.6,23
+R-0677,Premium,Motorway,100,0,69.4,44
+R-0678,Premium,Motorway,100,0,77.1,50
+R-0679,Premium,Motorway,100,0,70.1,32
+R-0680,Premium,Motorway,100,1,70.4,27
+R-0681,Premium,Motorway,100,3,73.6,46
+R-0682,Premium,Motorway,100,2,73.4,54
+R-0683,Premium,Motorway,100,1,74.7,34
+R-0684,Premium,Motorway,100,1,76.2,6
+R-0685,Premium,Motorway,100,0,71.0,38
+R-0686,Premium,Motorway,100,0,68.2,43
+R-0687,Premium,Motorway,100,0,70.8,46
+R-0688,Premium,Motorway,100,1,74.3,35
+R-0689,Premium,Motorway,100,1,72.3,15
+R-0690,Premium,Motorway,100,3,70.9,32
+R-0691,Premium,Motorway,100,1,71.1,43
+R-0692,Premium,Motorway,100,0,73.2,4
+R-0693,Premium,Motorway,100,1,74.2,16
+R-0694,Premium,Motorway,100,1,67.6,22
+R-0695,Premium,Motorway,100,0,70.1,47
+R-0696,Premium,Motorway,100,0,70.9,36
+R-0697,Premium,Motorway,100,1,68.5,44
+R-0698,Premium,Motorway,100,0,71.3,53
+R-0699,Premium,Motorway,100,1,79.4,29
+R-0700,Premium,Motorway,100,1,70.7,45
+R-0701,Premium,Motorway,100,0,70.3,57
+R-0702,Premium,Motorway,100,0,68.8,7
+R-0703,Premium,Motorway,100,1,71.2,60
+R-0704,Premium,Motorway,100,1,72.9,52
+R-0705,Premium,Motorway,100,0,72.0,43
+R-0706,Premium,Motorway,100,0,68.3,48
+R-0707,Premium,Motorway,100,0,73.1,46
+R-0708,Premium,Motorway,100,0,73.4,41
+R-0709,Premium,Motorway,100,0,69.9,50
+R-0710,Premium,Motorway,100,0,74.6,41
+R-0711,Premium,Motorway,100,1,73.0,56
+R-0712,Premium,Motorway,100,0,74.1,26
+R-0713,Premium,Motorway,100,2,67.6,53
+R-0714,Premium,Motorway,100,0,68.1,19
+R-0715,Premium,Motorway,100,0,68.6,34
+R-0716,Premium,Motorway,100,0,69.3,4
+R-0717,Premium,Motorway,100,1,74.5,57
+R-0718,Premium,Motorway,100,1,71.5,50
+R-0719,Premium,Motorway,100,1,74.2,46
+R-0720,Premium,Motorway,100,2,78.2,28
+R-0721,Premium,Motorway,100,2,70.3,10
+R-0722,Premium,Motorway,100,1,72.2,18
+R-0723,Premium,Motorway,100,1,74.7,37
+R-0724,Premium,Motorway,100,1,72.1,8
+R-0725,Premium,Motorway,100,0,74.2,23
+R-0726,Premium,Motorway,100,1,73.8,9
+R-0727,Premium,Motorway,100,0,70.9,16
+R-0728,Premium,Motorway,100,1,72.8,39
+R-0729,Premium,Motorway,100,0,73.5,18
+R-0730,Premium,Motorway,100,0,74.4,44
+R-0731,Premium,Motorway,100,3,71.6,34
+R-0732,Premium,Motorway,100,0,67.9,47
+R-0733,Premium,Motorway,100,0,76.2,13
+R-0734,Premium,Motorway,100,2,77.9,12
+R-0735,Premium,Motorway,100,0,71.9,18
+R-0736,Premium,Motorway,100,0,76.3,53
+R-0737,Premium,Motorway,100,1,73.0,25
+R-0738,Premium,Motorway,100,2,74.1,17
+R-0739,Premium,Motorway,100,1,73.7,15
+R-0740,Premium,Motorway,100,0,69.5,55
+R-0741,Premium,Motorway,100,1,71.6,7
+R-0742,Premium,Motorway,100,0,70.6,6
+R-0743,Premium,Motorway,100,0,69.5,59
+R-0744,Premium,Motorway,100,2,73.0,37
+R-0745,Premium,Motorway,100,0,70.8,11
+R-0746,Premium,Motorway,100,1,73.2,21
+R-0747,Premium,Motorway,100,0,74.5,13
+R-0748,Premium,Motorway,100,1,69.5,34
+R-0749,Premium,Motorway,100,3,71.0,11
+R-0750,Premium,Motorway,100,0,69.3,6
+R-0751,Premium,Motorway,100,0,71.7,59
+R-0752,Premium,Motorway,100,0,69.3,38
+R-0753,Premium,Motorway,100,0,71.7,39
+R-0754,Premium,Motorway,100,0,71.3,48
+R-0755,Premium,Motorway,100,0,77.6,55
+R-0756,Premium,Motorway,100,1,69.1,60
+R-0757,Premium,Motorway,100,0,69.6,12
+R-0758,Premium,Motorway,100,1,71.6,22
+R-0759,Premium,Motorway,100,1,75.2,47
+R-0760,Premium,Motorway,100,1,67.7,30
+R-0761,Premium,Motorway,100,1,76.8,11
+R-0762,Premium,Motorway,100,0,70.4,9
+R-0763,Premium,Motorway,100,0,69.3,55
+R-0764,Premium,Motorway,100,1,64.1,29
+R-0765,Premium,Motorway,100,0,75.5,40
+R-0766,Premium,Motorway,100,0,70.5,51
+R-0767,Premium,Motorway,100,0,72.7,59
+R-0768,Premium,Motorway,100,2,72.2,23
+R-0769,Premium,Motorway,100,0,74.7,51
+R-0770,Premium,Motorway,100,0,71.1,57
+R-0771,Premium,Motorway,100,1,66.6,41
+R-0772,Premium,Motorway,100,1,75.3,14
+R-0773,Premium,Motorway,100,1,75.2,12
+R-0774,Premium,Motorway,100,1,75.1,47
+R-0775,Premium,Motorway,100,0,71.5,29
+R-0776,Premium,Motorway,100,0,69.3,7
+R-0777,Premium,Motorway,100,1,71.6,60
+R-0778,Premium,Motorway,100,0,72.4,28
+R-0779,Premium,Motorway,100,1,74.1,8
+R-0780,Premium,Motorway,100,1,72.2,46
+R-0781,Premium,Motorway,100,1,69.6,19
+R-0782,Premium,Motorway,100,0,66.7,31
+R-0783,Premium,Motorway,100,0,73.8,57
+R-0784,Premium,Motorway,100,0,71.6,8
+R-0785,Premium,Motorway,100,0,71.1,55
+R-0786,Premium,Motorway,100,1,71.5,7
+R-0787,Premium,Motorway,100,0,65.9,56
+R-0788,Premium,Motorway,100,0,74.3,55
+R-0789,Premium,Motorway,100,0,71.0,58
+R-0790,Premium,Motorway,100,0,71.0,34
+R-0791,Premium,Motorway,100,2,67.1,27
+R-0792,Premium,Motorway,100,0,75.6,10
+R-0793,Premium,Motorway,100,0,74.3,26
+R-0794,Premium,Motorway,100,1,75.8,46
+R-0795,Premium,Motorway,100,0,62.6,46
+R-0796,Premium,Motorway,100,2,73.0,27
+R-0797,Premium,Motorway,100,1,75.5,8
+R-0798,Premium,Motorway,100,1,70.4,31
+R-0799,Premium,Motorway,100,1,72.8,26
+R-0800,Premium,Motorway,100,1,66.6,25
+R-0801,Premium,Motorway,100,1,70.1,56
+R-0802,Premium,Motorway,100,1,76.7,17
+R-0803,Premium,Motorway,100,0,76.7,14
+R-0804,Premium,Motorway,100,1,72.0,15
+R-0805,Premium,Motorway,100,1,78.6,29
+R-0806,Premium,Motorway,100,0,69.1,31
+R-0807,Premium,Motorway,100,1,77.1,15
+R-0808,Premium,Motorway,100,0,70.4,36
+R-0809,Premium,Motorway,100,1,75.1,60
+R-0810,Premium,Motorway,100,0,72.2,38
+R-0811,Premium,Motorway,100,0,68.8,8
+R-0812,Premium,Motorway,100,0,70.8,14
+R-0813,Premium,Motorway,100,0,73.7,18
+R-0814,Premium,Motorway,100,0,74.9,57
+R-0815,Premium,Motorway,100,1,74.0,40
+R-0816,Premium,Motorway,100,2,77.0,43
+R-0817,Premium,Motorway,100,1,76.3,31
+R-0818,Premium,Motorway,100,0,75.7,39
+R-0819,Premium,Motorway,100,0,75.7,10
+R-0820,Premium,Motorway,100,1,73.0,50
+R-0821,Premium,Motorway,100,0,68.7,4
+R-0822,Premium,Motorway,100,0,67.2,16
+R-0823,Premium,Motorway,100,0,71.9,22
+R-0824,Premium,Motorway,100,0,68.5,17
+R-0825,Premium,Motorway,100,0,70.1,21
+R-0826,Premium,Motorway,100,1,74.0,24
+R-0827,Premium,Motorway,100,1,71.6,5
+R-0828,Premium,Motorway,100,0,76.0,14
+R-0829,Premium,Motorway,100,0,73.8,34
+R-0830,Premium,Motorway,100,0,68.8,40
+R-0831,Premium,Motorway,100,1,72.4,5
+R-0832,Premium,Motorway,100,1,72.5,41
+R-0833,Premium,Motorway,100,0,68.9,13
+R-0834,Premium,Motorway,100,0,71.1,39
+R-0835,Premium,Motorway,100,2,75.1,57
+R-0836,Premium,Motorway,100,0,74.7,6
+R-0837,Premium,Motorway,100,0,73.9,44
+R-0838,Premium,Motorway,100,0,70.6,27
+R-0839,Premium,Motorway,100,0,70.6,20
+R-0840,Premium,Motorway,100,2,67.6,26
+R-0841,Premium,Motorway,100,0,73.4,16
+R-0842,Premium,Motorway,100,0,68.3,15
+R-0843,Premium,Motorway,100,1,70.4,30
+R-0844,Premium,Motorway,100,0,68.5,54
+R-0845,Premium,Motorway,100,0,73.9,19
+R-0846,Premium,Motorway,100,3,76.4,28
+R-0847,Premium,Motorway,100,0,76.1,56
+R-0848,Premium,Motorway,100,1,75.5,11
+R-0849,Premium,Motorway,100,1,67.0,56
+R-0850,Premium,Motorway,100,3,74.6,15
+R-0851,Premium,Motorway,100,0,79.1,20
+R-0852,Premium,Motorway,100,1,76.3,39
+R-0853,Premium,Motorway,100,0,77.1,7
+R-0854,Premium,Motorway,100,2,68.9,36
+R-0855,Premium,Motorway,100,0,71.2,47
+R-0856,Premium,Motorway,100,2,77.2,19
+R-0857,Premium,Motorway,100,1,62.8,53
+R-0858,Premium,Motorway,100,1,76.1,28
+R-0859,Premium,Motorway,100,0,74.4,30
+R-0860,Premium,Motorway,100,0,70.6,22
+R-0861,Premium,Motorway,100,1,73.9,4
+R-0862,Premium,Motorway,100,0,72.6,36
+R-0863,Premium,Motorway,100,1,76.2,44
+R-0864,Premium,Motorway,100,0,73.2,34
+R-0865,Premium,Motorway,100,1,74.2,39
+R-0866,Premium,Motorway,100,1,70.4,41
+R-0867,Premium,Motorway,100,0,72.7,37
+R-0868,Premium,Motorway,100,0,73.1,6
+R-0869,Premium,Motorway,100,1,69.3,29
+R-0870,Premium,Motorway,100,1,68.5,48
+R-0871,Premium,Motorway,100,1,73.1,33
+R-0872,Premium,Motorway,100,1,76.1,37
+R-0873,Premium,Motorway,100,1,68.8,55
+R-0874,Premium,Motorway,100,0,73.6,20
+R-0875,Premium,Motorway,100,1,75.1,42
+R-0876,Premium,Motorway,100,1,73.1,26
+R-0877,Premium,Motorway,100,2,75.5,31
+R-0878,Premium,Motorway,100,0,69.9,55
+R-0879,Premium,Motorway,100,1,67.3,10
+R-0880,Premium,Motorway,100,1,74.4,21
+R-0881,Premium,Motorway,100,1,75.3,59
+R-0882,Premium,Motorway,100,0,77.3,37
+R-0883,Premium,Motorway,100,0,68.6,43
+R-0884,Premium,Motorway,100,3,69.2,32
+R-0885,Premium,Motorway,100,0,74.0,15
+R-0886,Premium,Motorway,100,1,73.1,39
+R-0887,Premium,Motorway,100,0,73.0,25
+R-0888,Premium,Motorway,100,2,73.8,28
+R-0889,Premium,Motorway,100,1,77.1,49
+R-0890,Premium,Motorway,100,2,71.9,52
+R-0891,Premium,Motorway,100,0,66.5,41
+R-0892,Premium,Motorway,100,0,68.1,29
+R-0893,Premium,Motorway,100,3,68.5,23
+R-0894,Premium,Motorway,100,2,72.7,44
+R-0895,Premium,Motorway,100,0,70.7,51
+R-0896,Premium,Motorway,100,2,70.6,10
+R-0897,Premium,Motorway,100,0,72.4,50
+R-0898,Premium,Motorway,100,1,70.4,49
+R-0899,Premium,Motorway,100,0,72.9,13
+R-0900,Premium,Motorway,100,1,73.1,49
+R-0901,Premium,Motorway,100,0,72.1,36
+R-0902,Premium,Motorway,100,0,72.4,32
+R-0903,Premium,Motorway,100,0,71.9,39
+R-0904,Premium,Motorway,100,0,74.4,38
+R-0905,Premium,Motorway,100,0,70.6,18
+R-0906,Premium,Motorway,100,0,70.6,42
+R-0907,Premium,Motorway,100,1,72.0,37
+R-0908,Premium,Motorway,100,0,70.2,44
+R-0909,Premium,Motorway,100,1,75.7,35
+R-0910,Premium,Motorway,100,0,71.6,7
+R-0911,Premium,Motorway,100,0,72.8,24
+R-0912,Premium,Motorway,100,0,74.6,60
+R-0913,Premium,Motorway,100,0,72.4,9
+R-0914,Premium,Motorway,100,0,79.9,9
+R-0915,Premium,Motorway,100,0,75.0,50
+R-0916,Premium,Motorway,100,0,72.7,51
+R-0917,Premium,Motorway,100,1,68.5,22
+R-0918,Premium,Motorway,100,0,69.4,30
+R-0919,Premium,Motorway,100,2,74.4,28
+R-0920,Premium,Motorway,100,1,70.8,10
+R-0921,Premium,Motorway,100,1,70.9,35
+R-0922,Premium,Motorway,100,0,71.4,51
+R-0923,Premium,Motorway,100,1,67.7,38
+R-0924,Premium,Motorway,100,1,71.7,44
+R-0925,Premium,Motorway,100,0,69.0,9
+R-0926,Premium,Motorway,100,0,70.0,32
+R-0927,Premium,Motorway,100,1,72.7,16
+R-0928,Premium,Motorway,100,1,70.6,36
+R-0929,Premium,Motorway,100,0,68.9,11
+R-0930,Premium,Motorway,100,1,69.7,40
+R-0931,Premium,Motorway,100,0,73.7,10
+R-0932,Premium,Motorway,100,1,73.0,32
+R-0933,Premium,Motorway,100,1,73.0,27
+R-0934,Premium,Motorway,100,1,72.5,36
+R-0935,Premium,Motorway,100,1,76.7,5
+R-0936,Premium,Motorway,100,0,70.7,53
+R-0937,Premium,Motorway,100,1,73.2,22
+R-0938,Premium,Motorway,100,0,71.2,34
+R-0939,Premium,Motorway,100,1,74.0,10
+R-0940,Premium,Motorway,100,0,72.7,34
+R-0941,Premium,City arterial,100,1,38.8,48
+R-0942,Premium,City arterial,100,0,37.8,8
+R-0943,Premium,City arterial,100,0,41.0,57
+R-0944,Premium,City arterial,100,1,37.4,7
+R-0945,Premium,City arterial,100,0,40.4,53
+R-0946,Premium,City arterial,100,0,37.6,26
+R-0947,Premium,City arterial,100,0,37.7,36
+R-0948,Premium,City arterial,100,0,40.8,15
+R-0949,Premium,City arterial,100,0,40.3,11
+R-0950,Premium,City arterial,100,0,40.7,24
+R-0951,Premium,City arterial,100,0,35.0,56
+R-0952,Premium,City arterial,100,0,35.5,13
+R-0953,Premium,City arterial,100,0,44.7,20
+R-0954,Premium,City arterial,100,0,42.5,23
+R-0955,Premium,City arterial,100,0,41.2,37
+R-0956,Premium,City arterial,100,1,38.1,17
+R-0957,Premium,City arterial,100,0,43.2,11
+R-0958,Premium,City arterial,100,0,33.8,60
+R-0959,Premium,City arterial,100,0,37.3,7
+R-0960,Premium,City arterial,100,1,35.7,25
+R-0961,Premium,City arterial,100,0,36.9,43
+R-0962,Premium,City arterial,100,0,39.2,30
+R-0963,Premium,City arterial,100,0,38.1,28
+R-0964,Premium,City arterial,100,0,40.8,28
+R-0965,Premium,City arterial,100,0,40.9,23
+R-0966,Premium,City arterial,100,0,43.2,13
+R-0967,Premium,City arterial,100,0,35.6,55
+R-0968,Premium,City arterial,100,0,40.2,13
+R-0969,Premium,City arterial,100,0,43.9,13
+R-0970,Premium,City arterial,100,0,39.7,9
+R-0971,Premium,City arterial,100,0,42.7,46
+R-0972,Premium,City arterial,100,3,42.2,8
+R-0973,Premium,City arterial,100,0,41.9,40
+R-0974,Premium,City arterial,100,0,40.7,27
+R-0975,Premium,City arterial,100,0,41.6,10
+R-0976,Premium,City arterial,100,0,43.6,27
+R-0977,Premium,City arterial,100,0,32.8,50
+R-0978,Premium,City arterial,100,0,43.1,13
+R-0979,Premium,City arterial,100,0,40.1,15
+R-0980,Premium,City arterial,100,1,39.9,43
+R-0981,Premium,City arterial,100,0,42.1,54
+R-0982,Premium,City arterial,100,1,41.1,49
+R-0983,Premium,City arterial,100,1,38.4,28
+R-0984,Premium,City arterial,100,0,38.6,47
+R-0985,Premium,City arterial,100,1,42.1,16
+R-0986,Premium,City arterial,100,0,37.7,7
+R-0987,Premium,City arterial,100,0,40.8,20
+R-0988,Premium,City arterial,100,0,34.1,16
+R-0989,Premium,City arterial,100,0,40.5,46
+R-0990,Premium,City arterial,100,0,38.4,11
+R-0991,Premium,Inner-city lanes,100,0,21.9,18
+R-0992,Premium,Inner-city lanes,100,0,33.5,57
+R-0993,Premium,Inner-city lanes,100,1,23.5,22
+R-0994,Premium,Inner-city lanes,100,0,20.5,5
+R-0995,Premium,Inner-city lanes,100,0,29.4,7
+R-0996,Premium,Inner-city lanes,100,0,24.9,49
+R-0997,Premium,Inner-city lanes,100,0,23.4,20
+R-0998,Premium,Inner-city lanes,100,0,30.2,9
+R-0999,Premium,Inner-city lanes,100,0,21.1,32
+R-1000,Premium,Inner-city lanes,100,0,27.1,24

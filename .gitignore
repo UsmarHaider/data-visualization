@@ -10,3 +10,21 @@ venv/
 
 # macOS
 .DS_Store
+
+# Teacher-only material — never commit to the student repository
+*TEACHER*
+*_KEY*
+*ANSWER*
+solution/
+reveals.py
+make_task.py
+teacher_key.py
+
+# Student marks — never commit to a student-facing repository
+*[Mm]arks*.xlsx
+*[Gg]rades*.xlsx
+
+# Student output from the week 3 starters
+week3/assignments/partD_figure.png
+week3/assignments/partC_palette.png
+week3/assignments/popout_panels.png
