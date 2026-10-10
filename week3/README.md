@@ -32,7 +32,6 @@ No setup needed beyond the libraries; the data is already in `assignments/data/`
 |---|---|
 | `assignments/TASKS.md` | Five parts, the rules and the marking guide |
 | `assignments/vizlib.py` | The toolkit — palette, Lie Factor, colour-blindness simulation, `match_stats` |
-| `assignments/charts/` | The nine charts to diagnose |
 | `assignments/data/` | Ten datasets + `DATA_DICTIONARY.md` |
 | `assignments/starter/` | Three runnable skeletons: Part D, Part C, and the Week 1 bonus |
 
@@ -44,7 +43,7 @@ No setup needed beyond the libraries; the data is already in `assignments/data/`
 
 | Part | Covers | Marks |
 |---|---|---|
-| A | Diagnose the nine charts — conclusion, decoy, mechanism, redesign | 36 |
+| A | Rebuild nine charts, then diagnose them — conclusion, decoy, mechanism, redesign | 36 |
 | B | Lie Factor audit computed in Python, including the one that has none | 15 |
 | C | Prove a palette is colour-blind safe, with the failure shown | 9 |
 | D | **Hands-on:** the 2×2 clinical review figure, exported at 300 dpi | 25 |
@@ -55,11 +54,20 @@ Full briefs in [`assignments/TASKS.md`](assignments/TASKS.md).
 
 ## What makes this week different
 
-Every chart in `assignments/charts/` is **arithmetically correct**. Nothing has
-been fiddled. Several are drawn more carefully than most published charts. They
-are still all wrong, and in most cases the obvious objection — *"correlation is
-not causation", "the axis is truncated", "n is too small"* — is either
-irrelevant or already ruled out by how the chart was drawn.
+Students are not handed nine finished charts to look at. They are handed nine
+**published claims and the recipe each analyst followed**, and they rebuild
+every chart themselves before diagnosing it.
+
+That matters twice over. It makes Part A a Lecture 5 exercise rather than a
+reading exercise — you cannot argue about a default bin width until you have
+been the person who chose it — and it means nobody can diagnose a chart they
+have not understood well enough to reproduce. Each case carries a self-check
+number so a student knows their rebuild is faithful.
+
+Every one of those charts is **arithmetically correct**. Nothing has been
+fiddled. They are still all wrong, and in most cases the obvious objection —
+*"correlation is not causation", "the axis is truncated", "n is too small"* —
+is either irrelevant or ruled out by the recipe itself.
 
 That is deliberate. Scepticism is cheap and generic. The marks are for naming
 the mechanism and proving it from the data, which means opening the CSV and

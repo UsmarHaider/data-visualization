@@ -16,9 +16,13 @@ Week 1 taught you to **see** a chart. Week 2 taught you to **judge** one.
 Week 3 teaches you to **build** one — and the fastest way to learn what a good
 chart is made of is to take nine bad ones apart.
 
-Every chart in `charts/` is arithmetically correct. No number has been
-fiddled, no axis is secretly truncated unless the brief says so, and several of
-them are drawn more carefully than most things you will see published. They are
+Nine analysts each published a claim. Part A gives you their data and the
+recipe each of them followed, and asks you to **rebuild their chart yourself**
+— then work out why it is wrong.
+
+Every one of those charts is arithmetically correct. No number has been
+fiddled, no axis is secretly truncated unless the recipe says so, and several
+are drawn more carefully than most things you will see published. They are
 still all wrong.
 
 > **The one thing this week is really testing.** For every chart there is an
@@ -64,7 +68,6 @@ pip install pandas numpy matplotlib seaborn scipy
 | `vizlib.py` | The toolkit. Palette, `lie_factor()`, `simulate_cvd()`, `match_stats()`. Read it — it is short. |
 | `data/` | Ten datasets. Every one of them has something wrong with it. |
 | `data/DATA_DICTIONARY.md` | What the columns **mean**. Not what is wrong with them. |
-| `charts/` | The nine charts you have to diagnose. |
 | `starter/starter.py` | Skeleton for Part D. Runs as given and produces a deliberately bad figure. |
 | `starter/palette_check.py` | Skeleton for Part C. |
 | `starter/popout.py` | The Week 1 carry-forward. Optional, 5 bonus marks. |
@@ -92,63 +95,133 @@ pip install pandas numpy matplotlib seaborn scipy
 
 ---
 
-## Part A · Diagnose the nine charts  (36 marks)
+## Part A · Rebuild nine charts, then take them apart  (36 marks)
 
-For **each** chart in `charts/`, write four things. Four marks each.
+Nine analysts published nine claims. You get their data and the recipe each of
+them followed. **Build the chart, then work out why it is wrong.**
 
-1. **The conclusion** the chart invites a reader to draw, in one sentence.
-2. **The decoy** — the first objection you thought of, and *why it does not
-   hold here*. You must rule it out with evidence from the data, not with a
-   shrug.
-3. **The actual mechanism** — what is really producing the pattern, named
-   precisely, with the number that demonstrates it.
-4. **The redesign** — which chart you would draw instead, in one sentence plus
-   the Seaborn or Matplotlib call that would draw it.
+Rebuilding it is not busywork — it is Lecture 5. You cannot argue about a
+truncated axis or a default bin width until you have been the person who chose
+them.
 
-### The nine charts
+### What to hand in for each of the nine
 
-| # | Chart | Data | The claim it makes |
-|---|---|---|---|
-| 1 | `case01_premium_helmets_look_lethal.png` | `case01_helmet_rickshaw.csv` | Premium helmets have 2.5× the head-injury rate |
-| 2 | `case02_chai_causes_failure.png` | `case02_chai_quizzes.csv` | Canteen chai sales predict quiz failures, r = 0.93 |
-| 3 | `case03_policy_cleaned_the_air.png` | `case03_aqi_monitors.csv` | The Smog Action Plan cut Lahore's AQI by a third |
-| 4 | `case04_identical_departments.png` | `case04_quartet_depts.csv` | Four departments behave identically, so fund them equally |
-| 5 | `case05_five_identical_cohorts.png` | `case05_same_stats_shapes.csv` | Five cohorts, one set of statistics |
-| 6 | `case06_heatmap_discovery.png` | `case06_sensor_matrix.csv` | Creatinine tracks HbA1c — a finding |
-| 7 | `case07F_dual_axis_crossover.png` | `case07_dual_axis_series.csv` | ShaheenGo ran at a loss until May |
-| 8 | `case08_bin_width_changes_the_finding.png` | `vitals_10k.csv` | Three bin widths, three different distributions |
-| 9 | `case09_kde_above_a_physical_limit.png` | `vitals_10k.csv` | 4.4% of the density sits above 100% saturation |
+Four marks each.
 
-### Two things that will save you an afternoon
-
-- **Check the axis before you write "truncated axis".** On at least one of
-  these it starts at zero, and the marker will check whether you looked.
-- **Several of these files carry a column that is not on the chart.** Open
-  the CSV before you theorise. A hypothesis you can test and reject is worth
-  more marks than one you assert.
-
-### How Part A is marked
-
-| | |
+| | Marks |
 |---|---|
-| Conclusion stated correctly | 1 |
-| Decoy named **and ruled out with evidence** | 1 |
-| Mechanism named precisely, with the number | 1 |
-| Redesign, with the call that would draw it | 1 |
+| **Rebuild it.** Your chart reproduces the published claim from the recipe, and hits the self-check number | 1 |
+| **The conclusion and the decoy.** The conclusion the chart invites, in one sentence — plus the first objection you thought of and *why it does not hold here*, ruled out with evidence from the data | 1 |
+| **The mechanism.** What is really producing the pattern, named precisely, with the number that demonstrates it | 1 |
+| **The redesign.** The honest chart, actually plotted, not described | 1 |
 
-"Correlation is not causation" scores **zero** on item 3. It is a true
-statement about the world and it names no mechanism. Say *which* third
+"Correlation is not causation" scores **zero** on the mechanism mark. It is a
+true statement about the world and it names no mechanism. Say *which* third
 variable, and show the number.
 
 ---
+
+### 1 · "Premium-certified helmets have 2.5x the head-injury rate"
+`case01_helmet_rickshaw.csv`
+
+> Sum `head_injuries` and `trips` by `helmet_grade`. Plot injuries per 1,000
+> trips as a bar chart, y-axis from zero, one bar per grade.
+
+**Self-check:** Standard **2.15**, Premium **5.40**.
+
+### 2 · "Canteen chai sales predict quiz failures"
+`case02_chai_quizzes.csv`
+
+> Scatter `cups_doodh_patti_sold` (x) against `quiz_failures` (y), one point
+> per month. Fit a least-squares line through it and annotate Pearson r.
+
+**Self-check:** r = **0.98**.
+
+### 3 · "The Smog Action Plan cut Lahore's AQI by a third"
+`case03_aqi_monitors.csv`
+
+> Mean `aqi` per `date` across every row. Plot it as a line, **y-axis from
+> zero**. Draw a vertical marker at day 61, and a horizontal mean line for
+> days 1–60 and another for days 61–120.
+
+**Self-check:** before **202**, after **137** — a **32%** fall.
+
+### 4 · "Four departments behave identically, so fund them equally"
+`case04_quartet_depts.csv`
+
+> Not a chart. Produce a table: n, mean study hours, mean score, SD of each,
+> Pearson r and the regression slope — one column per `department`.
+
+**Self-check:** every department reports mean **18.00** / **14.50** and
+r = **0.816**.
+
+### 5 · "Five cohorts, one set of statistics"
+`case05_same_stats_shapes.csv`
+
+> Also not a chart. The same table, one column per `shape_name`.
+
+**Self-check:** every cohort reports **48.00** / **63.00**, SD **12.00** /
+**15.00**, r = **0.420**.
+
+### 6 · "Creatinine tracks HbA1c — a finding"
+`case06_sensor_matrix.csv`
+
+> Correlation matrix of every numeric column except `age_band`, `study_site`
+> and `hr_device_model`. Draw it as an annotated heatmap exactly as the
+> analyst did: `cmap="Reds"`, **no `vmin`/`vmax`**, both triangles shown.
+
+**Self-check:** creatinine ↔ hba1c = **0.77**, systolic ↔ map_mmhg =
+**0.96**, and the matrix is **20 × 20**.
+
+> This one has something wrong with how it is *drawn* as well as what it
+> *says*. Report both, and be clear about which of the two fixing the drawing
+> actually solves.
+
+### 7 · "ShaheenGo ran at a loss until May"
+`case07_dual_axis_series.csv`
+
+> Line chart with **two y-axes**: `revenue_pkr_m` on the left limited to
+> 50–80, `cost_pkr_m` on the right limited to 40–56. `ax.twinx()`.
+
+**Self-check:** the cost line sits **above** the revenue line for the first
+four months.
+
+### 8 · "Three bin widths, three different distributions"
+`vitals_10k.csv`
+
+> Three histograms of `systolic` side by side, sharing nothing but the data:
+> `bins=3`, `bins=45`, `bins=400`.
+
+**Self-check:** n = **10,000** in all three panels.
+
+### 9 · "4.4% of the density sits above 100% saturation"
+`vitals_10k.csv`
+
+> Kernel density estimate of `spo2` with the **default** bandwidth. Extend the
+> x-axis to 108 so the whole curve is visible, and mark 100.
+
+**Self-check:** the maximum value in the data is **100**. The curve is not.
+
+---
+
+### Two things that will save you an afternoon
+
+- **You are the one choosing the axis now.** Recipe 3 says "y-axis from zero",
+  and it means it. If your instinct is to write "the axis is truncated", check
+  your own code first.
+- **Several of these files carry a column the recipe never plots.** Open the
+  CSV before you theorise. A hypothesis you can test and reject is worth more
+  marks than one you assert.
 
 ## Part B · Lie Factor, in code  (15 marks)
 
 Week 2 had you measure graphics with a ruler. This week you compute.
 
-Open `charts/case07_five_graphics_to_audit.png` and
-`data/case07_lie_factor.csv`, which holds the measured ink for all five
-graphics.
+Open `data/case07_lie_factor.csv`. It holds, for five published graphics, the
+two data values, the measured ink, the unit that ink was measured in, whether
+the quantity is encoded by a length or an area, and a prose description of
+what each graphic does. You do not need to see the pictures to audit them —
+that is the point of measuring.
 
 Tufte's Lie Factor:
 
@@ -168,8 +241,8 @@ Honest is 1.0. Tufte accepts 0.95 – 1.05.
    sentence what goes wrong if you leave it at 1. **(3 marks)**
 4. One of them has a Lie Factor **below** 1. Explain why an understated chart
    is still a distortion, and say who benefits from it. **(2 marks)**
-5. **Chart F** (`case07F_dual_axis_crossover.png`) is the sixth. Compute its
-   Lie Factor — or explain why you cannot. Then load
+5. **Chart F** is the dual-axis chart you rebuilt in Part A, case 7. Compute
+   its Lie Factor — or explain why you cannot. Then look again at
    `case07_dual_axis_series.csv` and say what the data actually shows.
    **(2 marks)**
 
@@ -315,7 +388,8 @@ textbook score full marks when they are reported honestly and explained.
 One ZIP on the LMS, named `W3_<RollNo>.zip`:
 
 ```
-partA_diagnosis.pdf        your nine diagnoses
+partA_charts.py            rebuilds all nine, and plots your nine redesigns
+partA_diagnosis.pdf        your nine diagnoses, with both figures per case
 partB_lie_factor.py        + its printed output
 partC_palette.py           + the before/after swatch PNG
 partD_figure.py            the script

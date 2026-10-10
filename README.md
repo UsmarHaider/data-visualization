@@ -206,7 +206,7 @@ rebuilds the Week 1 perception experiment in code.
 
 | Part | Topic | Marks |
 |---|---|---|
-| A | Diagnose nine charts that are wrong | 36 |
+| A | Rebuild nine charts that are wrong, then take them apart | 36 |
 | B | Lie Factor, computed in Python instead of measured with a ruler | 15 |
 | C | Prove a palette is colour-blind safe, with the failure shown | 9 |
 | D | **Hands-on:** the 2×2 clinical review figure, exported at 300 dpi | 25 |
@@ -215,12 +215,16 @@ rebuilds the Week 1 perception experiment in code.
 
 ### What makes this week different
 
-Every chart in `week3/assignments/charts/` is **arithmetically correct**.
-Nothing has been fiddled, and several are drawn more carefully than most
-published charts. They are still all wrong — and in most of them the obvious
-objection (*"correlation is not causation"*, *"the axis is truncated"*,
-*"n is too small"*) is either irrelevant or already ruled out by how the chart
-was drawn.
+Students are not handed nine finished charts. They get nine **published claims
+and the recipe each analyst followed**, and rebuild every chart themselves
+before diagnosing it — which turns Part A from a reading exercise into a
+Lecture 5 one. Each case carries a self-check number so they know the rebuild
+is faithful.
+
+Every one of those charts is **arithmetically correct**. Nothing has been
+fiddled. They are still all wrong — and in most of them the obvious objection
+(*"correlation is not causation"*, *"the axis is truncated"*, *"n is too
+small"*) is either irrelevant or ruled out by the recipe itself.
 
 Scepticism is cheap and generic. The marks are for naming the mechanism and
 proving it from the data, which means opening the CSV and computing something.
