@@ -14,6 +14,7 @@ committed **with their outputs**, so you can read the whole lecture on GitHub wi
 | **1** | Why visualization, and choosing the right chart | [`week1/`](week1/) |
 | **2** | Visual perception — preattentive attributes, Gestalt, cognitive load | [`week2/`](week2/) |
 | **3** | Matplotlib & Seaborn — building figures, and nine charts that are wrong | [`week3/`](week3/) |
+| **4** | Time-series, proportions & hierarchies — windows, shares and treemaps | [`week4/`](week4/) |
 
 More weeks will be added here as the course runs.
 
@@ -41,12 +42,16 @@ python3 download_assignment_data.py
 # Week 3 assignments — data is already committed, nothing to download
 cd ../../week3/assignments
 python3 vizlib.py          # self-check that the toolkit runs
+
+# Week 4 assignments — also committed, nothing to download
+cd ../../week4/assignments
+python3 tslib.py           # self-check that the toolkit runs
 ```
 
 **Requirements:** Python 3.9+, and:
 
 ```bash
-pip install pandas numpy matplotlib seaborn scipy jupyter ipykernel
+pip install pandas numpy matplotlib seaborn scipy statsmodels squarify jupyter ipykernel
 ```
 
 > No data files are committed that you cannot re-download. Each folder has a `download_*.py` script that
@@ -270,3 +275,76 @@ view. Part C makes students find that themselves rather than take it on trust.
 Model answers, the generator scripts and the reveal figures are **not** in this
 repository. `.gitignore` blocks `*TEACHER*`, `*_KEY*`, `*ANSWER*`, `solution/`,
 `make_task.py`, `reveals.py` and `teacher_key.py` from ever being committed here.
+
+---
+
+## Week 4 — Time-series, proportions & hierarchies
+
+Full brief in [`week4/assignments/TASKS.md`](week4/assignments/TASKS.md);
+week notes in [`week4/README.md`](week4/README.md).
+
+| Lecture | Topic | Outcome | CLO |
+|---|---|---|---|
+| **L7** | Time series — resolution, gaps, baselines, rolling means, decomposition | Design time-series visualizations that expose trend, seasonality and cycles | CLO2 |
+| **L8** | Proportions and hierarchies — pie vs bar, stacked forms, treemaps, sunbursts | Compare part-to-whole strategies and construct hierarchical visualizations | CLO2 |
+
+| Part | Covers | Marks |
+|---|---|---|
+| A | Rebuild nine charts, then diagnose them | 36 |
+| B | Smoothing, windows and panel shape, computed | 15 |
+| C | Part-to-whole legality, and the pie-ranking experiment | 9 |
+| D | **Hands-on:** the 2x2 e-commerce review figure at 300 dpi | 25 |
+| E | One page of written justification, with the window clause | 15 |
+| F | *Bonus, marked separately* — Week 1's `flights.csv` task, on data students find | 5 |
+
+### What makes this week different
+
+Week 3's nine charts were broken by a **drawing** decision, so they could be
+found by looking. Week 4's nine are broken **before any drawing happens** — by
+a parse, a resample, a rolling window, a denominator. The only way in is to
+open the file and compute something.
+
+One mechanism per deck idea: a date column sorted as text; plotting by row
+number so unrecorded days vanish; a *level* resampled with `sum()`; a trailing
+mean's turn arriving half a window late; a window that starts at the seasonal
+peak; an incomplete final period; volatility leaking up through a stacked
+area's moving baseline; parts that are not exclusive; and a rising share of a
+falling total.
+
+Two of the nine are *incomplete* rather than wrong — the redesign is the same
+chart with something else beside it, which is the argument of Lecture 8.
+
+### The toolkit — [`week4/assignments/tslib.py`](week4/assignments/tslib.py)
+
+`tslib` **imports Week 3's `vizlib` unchanged** rather than reimplementing it,
+so a Week 4 figure inherits the Week 3 palette and export rules by
+construction.
+
+| Function | What it does |
+|---|---|
+| `audit_index(...)` | Slide 10's six checks in one call — dtype, sort order, duplicates, gaps, partial tail |
+| `window_report(...)` | What each rolling window costs: variation removed, periods lost |
+| `lag_at_turn(...)` | How late a trailing mean finds a turning point, against the half-window |
+| `banked_figsize(...)` | Cleveland's banking-to-45&deg; rule, computed instead of guessed |
+| `exclusivity_check(...)` | Slide 32's first test, before any share is drawn |
+| `rollup_other(...)` | An `Other` bucket that hands back a note declaring what it hides |
+| `treemap` / `sunburst` / `cycle_plot` | Three hierarchy and seasonality marks, matplotlib only |
+
+`python3 tslib.py` self-tests, including an assertion that the measured
+trailing-mean lag matches the half-window.
+
+### Carried forward
+
+Week 1's open `flights.csv` question — *is the seasonality growing, or is the
+business?* — becomes Part F, on data students source themselves. Week 2's
+channel ranking does triple duty: it is why bars beat pies in Part C and why a
+treemap must print its values in Part D. Week 3's parameter-declaration and
+row-removal rules extend to the window length and the `Other` bucket.
+
+`TASKS.md` opens with a table mapping every Week 1-3 idea to where it returns.
+
+### Plotly is optional
+
+`px.treemap`, `px.sunburst` and `px.icicle` are previewed in the deck and
+arrive properly in Week 6, when they become interactive. Everything in Week 4
+is markable in matplotlib, so nobody is blocked on an install.
