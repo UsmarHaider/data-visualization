@@ -15,6 +15,7 @@ committed **with their outputs**, so you can read the whole lecture on GitHub wi
 | **2** | Visual perception — preattentive attributes, Gestalt, cognitive load | [`week2/`](week2/) |
 | **3** | Matplotlib & Seaborn — building figures, and nine charts that are wrong | [`week3/`](week3/) |
 | **4** | Time-series, proportions & hierarchies — windows, shares and treemaps | [`week4/`](week4/) |
+| **5** | Multivariate data & geospatial — channels, parallel coordinates, choropleths | [`week5/`](week5/) |
 
 More weeks will be added here as the course runs.
 
@@ -46,12 +47,16 @@ python3 vizlib.py          # self-check that the toolkit runs
 # Week 4 assignments — also committed, nothing to download
 cd ../../week4/assignments
 python3 tslib.py           # self-check that the toolkit runs
+
+# Week 5 assignments — committed too, and no GIS install needed
+cd ../../week5/assignments
+python3 geolib.py          # self-check that the toolkit runs
 ```
 
 **Requirements:** Python 3.9+, and:
 
 ```bash
-pip install pandas numpy matplotlib seaborn scipy statsmodels squarify jupyter ipykernel
+pip install pandas numpy matplotlib seaborn scipy statsmodels squarify scikit-learn jupyter ipykernel
 ```
 
 > No data files are committed that you cannot re-download. Each folder has a `download_*.py` script that
@@ -348,3 +353,52 @@ row-removal rules extend to the window length and the `Other` bucket.
 `px.treemap`, `px.sunburst` and `px.icicle` are previewed in the deck and
 arrive properly in Week 6, when they become interactive. Everything in Week 4
 is markable in matplotlib, so nobody is blocked on an install.
+
+---
+
+## Week 5 — Multivariate data & geospatial visualization
+
+Full brief in [`week5/assignments/TASKS.md`](week5/assignments/TASKS.md);
+week notes in [`week5/README.md`](week5/README.md).
+
+| Part | Covers | Marks |
+|---|---|---|
+| A | Rebuild nine charts, then diagnose them | 36 |
+| B | The five channel and spatial decisions, computed | 15 |
+| C | The two-map activity, run on five real readers | 9 |
+| D | The three health figures — bubble, parallel coordinates, choropleth | 25 |
+| E | One page of written justification | 15 |
+| F | *Bonus, separate* — a normalized map on data you find | 5 |
+
+### What is different this week
+
+Week 3's nine broken charts were broken by a **drawing** decision and you
+could find them by looking. Week 4's nine were broken **upstream of the
+pixels** — a parse, a resample, a window, a denominator.
+
+Week 5's nine are broken by **the encoding or the geography**. The arithmetic
+is right, the parse is right, and six of the nine would pass a design review.
+The lie is in which channel carried which variable, or in which boundaries
+were used to carve the land up — a radius standing in for an area, five
+quantile classes painted over a 7% spread, a hotspot that is nine cases in
+22,000 people, or a count map that correlates with population at **+0.986**.
+
+### The toolkit — [`week5/assignments/geolib.py`](week5/assignments/geolib.py)
+
+Built on `vizlib` the same way `tslib` is, so a Week 5 figure inherits the
+Week 3 palette and export rules by construction. It carries the projections,
+an exact Jenks classifier, polygon drawing, parallel coordinates with
+brushing, and Poisson funnel limits.
+
+**It needs no GIS stack.** Boundaries ship as plain GeoJSON and are read with
+the standard-library `json` module, so nobody is blocked on a `geopandas`
+install — the same reason `tslib` shipped its own treemap. Students who have
+`geopandas` and `mapclassify` may use them instead and say so.
+
+### Carried forward
+
+Week 2's channel ranking stops being a ranking and becomes a **budget**: two
+positions, then area, then lightness, then hue, spent in the order the reader
+needs to compare. Week 2's "experiments on real readers" returns as Part C.
+Week 4's denominator lesson becomes the most load-bearing idea of the week —
+it is case 2, it is Part C, and it is 8 of Part D's 25 marks.
