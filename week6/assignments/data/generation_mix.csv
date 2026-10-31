@@ -1,0 +1,163 @@
+month,source,subsource,mwh
+2025-04,Fossil,Gas,3294763
+2025-04,Fossil,Coal,1875502
+2025-04,Fossil,Furnace oil,919810
+2025-04,Hydro,Dam,2465769
+2025-04,Hydro,Run-of-river,737606
+2025-04,Renewable,Solar,457579
+2025-04,Renewable,Wind,519412
+2025-04,Imported,Imported,778784
+2025-04,All sources,Total,11049226
+2025-05,Fossil,Gas,3397906
+2025-05,Fossil,Coal,2085886
+2025-05,Fossil,Furnace oil,911990
+2025-05,Hydro,Dam,2685095
+2025-05,Hydro,Run-of-river,808005
+2025-05,Renewable,Solar,502452
+2025-05,Renewable,Wind,518112
+2025-05,Imported,Imported,836299
+2025-05,All sources,Total,11745746
+2025-06,Fossil,Gas,3501444
+2025-06,Fossil,Coal,2071695
+2025-06,Fossil,Furnace oil,883219
+2025-06,Hydro,Dam,2482579
+2025-06,Hydro,Run-of-river,804661
+2025-06,Renewable,Solar,547377
+2025-06,Renewable,Wind,529713
+2025-06,Imported,Imported,839761
+2025-06,All sources,Total,11660449
+2025-07,Fossil,Gas,3566787
+2025-07,Fossil,Coal,1952196
+2025-07,Fossil,Furnace oil,940447
+2025-07,Hydro,Dam,2753686
+2025-07,Hydro,Run-of-river,867735
+2025-07,Renewable,Solar,625869
+2025-07,Renewable,Wind,582200
+2025-07,Imported,Imported,816982
+2025-07,All sources,Total,12105903
+2025-08,Fossil,Gas,3512743
+2025-08,Fossil,Coal,2040820
+2025-08,Fossil,Furnace oil,851243
+2025-08,Hydro,Dam,2518593
+2025-08,Hydro,Run-of-river,868671
+2025-08,Renewable,Solar,618723
+2025-08,Renewable,Wind,545193
+2025-08,Imported,Imported,859327
+2025-08,All sources,Total,11815313
+2025-09,Fossil,Gas,3147447
+2025-09,Fossil,Coal,1841936
+2025-09,Fossil,Furnace oil,835486
+2025-09,Hydro,Dam,2469817
+2025-09,Hydro,Run-of-river,773266
+2025-09,Renewable,Solar,617561
+2025-09,Renewable,Wind,556858
+2025-09,Imported,Imported,774464
+2025-09,All sources,Total,11016833
+2025-10,Fossil,Gas,3232494
+2025-10,Fossil,Coal,1703424
+2025-10,Fossil,Furnace oil,721393
+2025-10,Hydro,Dam,2188206
+2025-10,Hydro,Run-of-river,723948
+2025-10,Renewable,Solar,584271
+2025-10,Renewable,Wind,511221
+2025-10,Imported,Imported,731259
+2025-10,All sources,Total,10396216
+2025-11,Fossil,Gas,2940288
+2025-11,Fossil,Coal,1646900
+2025-11,Fossil,Furnace oil,661410
+2025-11,Hydro,Dam,2147716
+2025-11,Hydro,Run-of-river,714766
+2025-11,Renewable,Solar,586655
+2025-11,Renewable,Wind,490920
+2025-11,Imported,Imported,699951
+2025-11,All sources,Total,9888605
+2025-12,Fossil,Gas,2772095
+2025-12,Fossil,Coal,1607897
+2025-12,Fossil,Furnace oil,640030
+2025-12,Hydro,Dam,2001171
+2025-12,Hydro,Run-of-river,691553
+2025-12,Renewable,Solar,565510
+2025-12,Renewable,Wind,463271
+2025-12,Imported,Imported,660816
+2025-12,All sources,Total,9402344
+2026-01,Fossil,Gas,2660721
+2026-01,Fossil,Coal,1588913
+2026-01,Fossil,Furnace oil,582799
+2026-01,Hydro,Dam,2046083
+2026-01,Hydro,Run-of-river,651349
+2026-01,Renewable,Solar,581573
+2026-01,Renewable,Wind,453670
+2026-01,Imported,Imported,663101
+2026-01,All sources,Total,9228210
+2026-02,Fossil,Gas,2759496
+2026-02,Fossil,Coal,1627662
+2026-02,Fossil,Furnace oil,555670
+2026-02,Hydro,Dam,1930985
+2026-02,Hydro,Run-of-river,639179
+2026-02,Renewable,Solar,602648
+2026-02,Renewable,Wind,453736
+2026-02,Imported,Imported,682088
+2026-02,All sources,Total,9251464
+2026-03,Fossil,Gas,2889879
+2026-03,Fossil,Coal,1657342
+2026-03,Fossil,Furnace oil,525551
+2026-03,Hydro,Dam,2100472
+2026-03,Hydro,Run-of-river,682154
+2026-03,Renewable,Solar,626718
+2026-03,Renewable,Wind,468366
+2026-03,Imported,Imported,707379
+2026-03,All sources,Total,9657862
+2026-04,Fossil,Gas,3240468
+2026-04,Fossil,Coal,1804997
+2026-04,Fossil,Furnace oil,551565
+2026-04,Hydro,Dam,2212629
+2026-04,Hydro,Run-of-river,751767
+2026-04,Renewable,Solar,677653
+2026-04,Renewable,Wind,467196
+2026-04,Imported,Imported,759868
+2026-04,All sources,Total,10466142
+2026-05,Fossil,Gas,3326066
+2026-05,Fossil,Coal,1867551
+2026-05,Fossil,Furnace oil,581019
+2026-05,Hydro,Dam,2161943
+2026-05,Hydro,Run-of-river,777054
+2026-05,Renewable,Solar,815095
+2026-05,Renewable,Wind,551101
+2026-05,Imported,Imported,736923
+2026-05,All sources,Total,10816751
+2026-06,Fossil,Gas,3530830
+2026-06,Fossil,Coal,1894402
+2026-06,Fossil,Furnace oil,580106
+2026-06,Hydro,Dam,2288980
+2026-06,Hydro,Run-of-river,793402
+2026-06,Renewable,Solar,809604
+2026-06,Renewable,Wind,536749
+2026-06,Imported,Imported,809592
+2026-06,All sources,Total,11243664
+2026-07,Fossil,Gas,3266775
+2026-07,Fossil,Coal,1949850
+2026-07,Fossil,Furnace oil,535564
+2026-07,Hydro,Dam,2466783
+2026-07,Hydro,Run-of-river,773216
+2026-07,Renewable,Solar,849925
+2026-07,Renewable,Wind,530692
+2026-07,Imported,Imported,804173
+2026-07,All sources,Total,11176978
+2026-08,Fossil,Gas,3309917
+2026-08,Fossil,Coal,1786242
+2026-08,Fossil,Furnace oil,446189
+2026-08,Hydro,Dam,2345916
+2026-08,Hydro,Run-of-river,763633
+2026-08,Renewable,Solar,837091
+2026-08,Renewable,Wind,530405
+2026-08,Imported,Imported,811593
+2026-08,All sources,Total,10830987
+2026-09,Fossil,Gas,3009166
+2026-09,Fossil,Coal,1758835
+2026-09,Fossil,Furnace oil,449647
+2026-09,Hydro,Dam,2414443
+2026-09,Hydro,Run-of-river,752217
+2026-09,Renewable,Solar,833383
+2026-09,Renewable,Wind,508687
+2026-09,Imported,Imported,767273
+2026-09,All sources,Total,10493652

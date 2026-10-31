@@ -16,6 +16,7 @@ committed **with their outputs**, so you can read the whole lecture on GitHub wi
 | **3** | Matplotlib & Seaborn — building figures, and nine charts that are wrong | [`week3/`](week3/) |
 | **4** | Time-series, proportions & hierarchies — windows, shares and treemaps | [`week4/`](week4/) |
 | **5** | Multivariate data & geospatial — channels, parallel coordinates, choropleths | [`week5/`](week5/) |
+| **6** | **Class task** — the integration checkpoint: process an unchecked dataset, then visualize it | [`week6/`](week6/) |
 
 More weeks will be added here as the course runs.
 
@@ -51,6 +52,10 @@ python3 tslib.py           # self-check that the toolkit runs
 # Week 5 assignments — committed too, and no GIS install needed
 cd ../../week5/assignments
 python3 geolib.py          # self-check that the toolkit runs
+
+# Week 6 class task — same three toolkits, one new dataset
+cd ../../week6/assignments
+python3 selfcheck.py       # self-check that the toolkits and the data load
 ```
 
 **Requirements:** Python 3.9+, and:
@@ -402,3 +407,79 @@ positions, then area, then lightness, then hue, spent in the order the reader
 needs to compare. Week 2's "experiments on real readers" returns as Part C.
 Week 4's denominator lesson becomes the most load-bearing idea of the week —
 it is case 2, it is Part C, and it is 8 of Part D's 25 marks.
+
+---
+
+## Week 6 — Class task: the integration checkpoint
+
+Full brief in [`week6/assignments/TASKS.md`](week6/assignments/TASKS.md);
+week notes in [`week6/README.md`](week6/README.md).
+
+In-class task, marked out of 25. No new material: Weeks 1–5 arrive together
+on one unchecked dataset from a fictional national grid operator.
+
+| Task | Covers | Marks |
+|---|---|---|
+| Setup & hygiene | Structure, reproducibility, no hand-edited data | 5 |
+| A | **Process** — audit, clean, and a decisions table with rules and counts | 5 |
+| B | **Visualize** — three charts answering three different kinds of question | 5 |
+| C | **Decide** — one figure for the board, normalized, with the counterfactual | 5 |
+| D | *Bonus, separate* — make it interactive, or do it again on real data | 5 |
+
+### What is different this week
+
+**The brief does not say what to build.** Every week so far named the chart,
+the denominator and the window. This one names the audience and the question
+and stops — the student chooses the questions, the chart types, the
+denominators, the windows, the class breaks, the projection and the rows to
+discard. The deciding is what carries the marks, and the only surviving rule
+is Week 3's: anything you decide, declare.
+
+**Processing is marked as heavily as drawing.** Task A is worth the same as
+Task C. The three CSVs carry **eleven kinds of defect** between them, each
+one a mechanism from Week 3, 4 or 5, mixed together across files of three
+different shapes. How many are in each file is published in `TASKS.md`,
+along with the numbers a correct clean produces. **What they are is not**,
+here or anywhere else in this repository — finding them is the task.
+
+**There is no reader experiment.** Weeks 2 and 5 asked for a timed search or
+a two-map activity run on five readers. This task does not, and nothing in
+it is marked on what another student understood.
+
+### The data
+
+Synthetic, fixed seed, and set in the **same fictional federation as Week
+5** — matching district names, populations and areas, so a Week 5 script
+still joins.
+
+| File | Rows | What it carries |
+|---|---|---|
+| `district_grid.csv` | 25 | 24 districts: population, households, income, electrification, rooftop solar, interruptions |
+| `grid_daily.csv` | 3,061 | Six supply zones × ~17 months: a cumulative energy meter, a daily peak load, interruption minutes |
+| `generation_mix.csv` | 162 | 18 months of a four-over-eight generation hierarchy, as published |
+| `regions.geojson` | 24 | The boundaries, plain GeoJSON — no `geopandas` needed |
+
+### The two anchors the brief is built around
+
+Both are published to students in `TASKS.md`, as confirmations rather than
+as explanations.
+
+1. **The daily file ships a counter, not a quantity.** Energy delivered is
+   the *change* in the meter reading. Summing the column overstates June
+   2026 in zone P1 by **479×** — and the curve still looks plausible, which
+   is why nobody catches it by looking. The data dictionary says a meter
+   reading is not a quantity of energy; it is still the most-missed line in
+   the week.
+
+2. **The count map and the rate map split the budget differently.**
+   r(interruptions, households) is **+0.991**, so a raw-count choropleth is
+   a population map; per 1,000 households it falls to **+0.175**. Top three
+   by count and by rate share **one** district, and that one is on both
+   lists because it is poor, not because it is large.
+
+### The toolkits are unchanged on purpose
+
+`vizlib.py`, `tslib.py` and `geolib.py` arrive byte-identical to Weeks 3, 4
+and 5. Nothing new was written for this week: the student already has the
+tools, and what is marked is whether they reach for the right one unprompted.
+`python3 selfcheck.py` confirms all three import and the data loads.
