@@ -17,6 +17,7 @@ committed **with their outputs**, so you can read the whole lecture on GitHub wi
 | **4** | Time-series, proportions & hierarchies — windows, shares and treemaps | [`week4/`](week4/) |
 | **5** | Multivariate data & geospatial — channels, parallel coordinates, choropleths | [`week5/`](week5/) |
 | **6** | **Class task** — the integration checkpoint: process an unchecked dataset, then visualize it | [`week6/`](week6/) |
+| **7** | **The dashboard** — one screen, six weeks: interaction, drill-down and the aggregate that lies | [`week7/`](week7/) |
 
 More weeks will be added here as the course runs.
 
@@ -56,6 +57,11 @@ python3 geolib.py          # self-check that the toolkit runs
 # Week 6 class task — same three toolkits, one new dataset
 cd ../../week6/assignments
 python3 selfcheck.py       # self-check that the toolkits and the data load
+
+# Week 7 — the same three toolkits, plus one new one
+cd ../../week7/assignments
+python3 selfcheck.py       # self-check that the toolkits and the data load
+python3 dashlib.py         # self-test this week's new toolkit
 ```
 
 **Requirements:** Python 3.9+, and:
@@ -63,6 +69,10 @@ python3 selfcheck.py       # self-check that the toolkits and the data load
 ```bash
 pip install pandas numpy matplotlib seaborn scipy statsmodels squarify scikit-learn jupyter ipykernel
 ```
+
+> Plotly is **optional**, everywhere it appears. Week 7's interactive task can
+> be done entirely in matplotlib with `dashlib.LinkedBrush`, for the same
+> reason `tslib` ships its own treemap and `geolib` needs no GIS stack.
 
 > No data files are committed that you cannot re-download. Each folder has a `download_*.py` script that
 > fetches its datasets from public sources, so the repository stays reproducible. Week 2 additionally
@@ -483,3 +493,111 @@ as explanations.
 and 5. Nothing new was written for this week: the student already has the
 tools, and what is marked is whether they reach for the right one unprompted.
 `python3 selfcheck.py` confirms all three import and the data loads.
+
+---
+
+## Week 7 — The dashboard: one screen, six weeks
+
+Full brief in [`week7/assignments/TASKS.md`](week7/assignments/TASKS.md);
+week notes in [`week7/README.md`](week7/README.md).
+
+The second integration week, and the last new idea of the course:
+**interaction**. Week 6 asked for one figure for one reader, with the student
+controlling everything that reader saw. Week 7 gives the reader controls, and
+names three of them — a Secretary with thirty seconds, a finance director who
+will filter to one mode and screenshot it, and a journalist who was sent the
+link.
+
+| Task | Covers | Marks |
+|---|---|---|
+| Setup & hygiene | Structure, reproducibility, no hand-edited data | 2 |
+| A | **Process** — audit four files, clean them, and a decisions table | 4 |
+| B | **The static spine** — four charts, four kinds of question, one a normalized map | 4 |
+| C | **Interact** — one linked or filterable view, and the interaction contract | 4 |
+| D | **The one screen** — headline, reading order, channel plan, and the reversal | 4 |
+| E | **The note** — parameters, the counterfactual, the ethics clause | 2 |
+| F | *Bonus, reported separately* — real data, or your own screen audited on five readers | 5 |
+
+### What is different this week
+
+Everything up to Week 6 could go wrong inside a single chart. Three failures
+need more than one panel and a control to exist at all, and this week is
+built on them:
+
+1. **The aggregate moves the other way.** The default view of a dashboard is
+   the aggregate, so a headline that improves while every group inside it
+   gets worse is the one error a reader cannot see by looking.
+2. **The filter double counts.** A route runs through four districts, so a
+   by-district filter credits it four times. Each filtered view is correct;
+   the reader who adds them up is not. In this file that is **3.096×**.
+3. **The drill-down does not reconcile.** Children that do not sum to their
+   parent, found by the first person who clicks.
+
+Task C's fourth mark is not for the interaction working. It is for naming one
+wrong conclusion the interaction makes *easy*, and saying what was done about
+it — because a control is an argument you let the reader make without you.
+
+### The anchor the week is built around
+
+The Transit Authority's published headline is that punctuality is improving.
+Over 2025 Q2 → 2026 Q2 the network on-time rate goes **78.87% → 80.60%**,
+**+1.73 points** — while **all four modes fall**, by 0.85 to 1.31 points.
+Nothing is wrong with any of those six numbers.
+
+`dashlib.rate_decomposition()` splits the change: **within −1.10 points, mix
++2.82 points**. Metro went from 10.9% of departures to 21.8% while Bus fell
+from 71.6% to 57.6%. The Authority did not get better at running buses — it
+ran fewer buses. The reversal survives every sensible choice of window, so
+the student cannot pick it away.
+
+### The other distinction the week turns on
+
+**A boarding is not a journey.** The daily returns count boardings (one
+person, one vehicle); the fare table counts journeys (one person, one trip,
+however many vehicles). The ratio over this file is **1.30**, so the two
+columns can never share an axis. It is stated in the data dictionary in those
+words, and it is still the line most likely to be missed.
+
+### The toolkit — [`week7/assignments/dashlib.py`](week7/assignments/dashlib.py)
+
+Built on `vizlib` the same way `tslib` and `geolib` are, so a Week 7 screen
+inherits the Week 3 palette and export rules by construction.
+
+| Function | What it does |
+|---|---|
+| `rate_decomposition(...)` | Splits a change in a headline rate into the within-group part and the mix part. Exact, and flags the reversal |
+| `overlap_factor(...)` | Does summing by category double count? Week 4's exclusivity test, for a filter |
+| `drilldown_check(...)` | Children against parents, and the published total hiding among the parts |
+| `channel_conflicts(...)` | One meaning per channel across the whole screen; positional channels reported, not flagged |
+| `dashboard_grid` / `kpi_tile` / `callout` / `shared_scale` | The furniture: a named panel grid with a headline band, a stat tile that never signals by colour alone, an annotation with a leader line, and one scale across small multiples |
+| `LinkedBrush` / `select_in_rect` | Brushing in plain matplotlib, with a `simulate()` path so a brush can be tested headlessly |
+
+`python3 dashlib.py` self-tests on made-up numbers, including an assertion
+that the decomposition is exact.
+
+### The data
+
+Four files and the boundaries, synthetic and seeded, in the **same fictional
+federation as Weeks 5 and 6** — matching codes, names, populations and areas,
+and `regions.geojson` byte-identical to Week 6's, so a Week 5 or 6 script
+still joins.
+
+| File | Rows | What it carries |
+|---|---|---|
+| `district_transit.csv` | 25 | The district register: population, households, stops, roads, attributed boardings, concession share, vehicles |
+| `routes.csv` | 36 | 36 routes: mode, corridor, fleet, the districts each one serves, boardings, punctuality, crowding, cost recovery |
+| `ridership_daily.csv` | 2,159 | Four modes × ~18 months: departures scheduled, operated and on time, boardings, delay minutes |
+| `fare_revenue.csv` | 288 | 18 months × four modes × the published fare products: journeys and revenue |
+| `regions.geojson` | 24 | The boundaries, plain GeoJSON |
+
+**Fourteen kinds of defect** across the four files — five, three, five and
+one. The counts are published in `TASKS.md`, along with the numbers a correct
+clean produces. What they are is not, here or anywhere else in this
+repository.
+
+### Carried forward
+
+`TASKS.md` opens with a table mapping every Week 1–6 idea to the task where
+it returns. Week 5 and 6's denominator lesson is the ethics clause again —
+r(boardings, population) is **+0.945**, and the top three districts by count
+and by rate share exactly **one** district.
